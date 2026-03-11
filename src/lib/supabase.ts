@@ -1,14 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '@/integrations/supabase/client';
 import type { PhaseCode, UADField, PhaseMetadata, Inspection, InspectionResponse } from '@/types/inspection';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Missing Supabase environment variables. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.');
-}
-
-export const supabase = createClient(supabaseUrl || '', supabaseAnonKey || '');
+export { supabase };
 
 export const db = {
   fields: {
@@ -19,7 +12,7 @@ export const db = {
         .eq('phase', phase)
         .order('field_num');
       if (error) throw error;
-      return data || [];
+      return (data || []) as unknown as UADField[];
     },
     getAll: async (): Promise<UADField[]> => {
       const { data, error } = await supabase
@@ -27,7 +20,7 @@ export const db = {
         .select('*')
         .order('phase, field_num');
       if (error) throw error;
-      return data || [];
+      return (data || []) as unknown as UADField[];
     },
   },
 
@@ -38,7 +31,7 @@ export const db = {
         .select('*')
         .order('display_order');
       if (error) throw error;
-      return data || [];
+      return (data || []) as unknown as PhaseMetadata[];
     },
   },
 
@@ -50,21 +43,21 @@ export const db = {
         .eq('user_id', userId)
         .order('updated_at', { ascending: false });
       if (error) throw error;
-      return data || [];
+      return (data || []) as unknown as Inspection[];
     },
     create: async (inspection: Partial<Inspection>): Promise<Inspection> => {
       const { data, error } = await supabase
         .from('inspections')
-        .insert(inspection)
+        .insert(inspection as any)
         .select()
         .single();
       if (error) throw error;
-      return data;
+      return data as unknown as Inspection;
     },
     update: async (id: string, updates: Partial<Inspection>): Promise<void> => {
       const { error } = await supabase
         .from('inspections')
-        .update(updates)
+        .update(updates as any)
         .eq('id', id);
       if (error) throw error;
     },
@@ -85,12 +78,12 @@ export const db = {
         .eq('user_id', userId)
         .eq('inspection_name', inspectionName);
       if (error) throw error;
-      return data || [];
+      return (data || []) as unknown as InspectionResponse[];
     },
     upsert: async (response: Partial<InspectionResponse>): Promise<void> => {
       const { error } = await supabase
         .from('inspection_responses')
-        .upsert(response, {
+        .upsert(response as any, {
           onConflict: 'user_id,inspection_name,field_appsheet_column',
         });
       if (error) throw error;
@@ -98,7 +91,7 @@ export const db = {
     upsertBatch: async (responses: Partial<InspectionResponse>[]): Promise<void> => {
       const { error } = await supabase
         .from('inspection_responses')
-        .upsert(responses, {
+        .upsert(responses as any, {
           onConflict: 'user_id,inspection_name,field_appsheet_column',
         });
       if (error) throw error;
