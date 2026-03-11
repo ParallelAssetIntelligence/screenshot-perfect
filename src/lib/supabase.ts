@@ -1,14 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '@/integrations/supabase/client';
 import type { PhaseCode, UADField, PhaseMetadata, Inspection, InspectionResponse } from '@/types/inspection';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  console.error('Missing Supabase environment variables. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.');
-}
-
-export const supabase = createClient(supabaseUrl || '', supabaseAnonKey || '');
+export { supabase };
 
 export const db = {
   fields: {
