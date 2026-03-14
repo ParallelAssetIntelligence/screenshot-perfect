@@ -150,7 +150,7 @@ export function FormFieldRenderer({
               {options.map((option) => (
                 <div
                   key={option}
-                  className="flex items-center space-x-2 rounded-sm px-2 py-2 hover:bg-gray-100 cursor-pointer"
+                  className="flex items-center space-x-2 rounded-sm px-2 py-2 hover:bg-muted cursor-pointer"
                   onClick={() => onToggleArrayValue(option)}
                 >
                   <Checkbox
