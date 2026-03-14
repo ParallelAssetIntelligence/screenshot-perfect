@@ -91,16 +91,6 @@ function GuidanceContent({ currentPhase }: { currentPhase: PhaseCode }) {
               ))}
             </div>
           )}
-          {guidance.actions && guidance.actions.length > 0 && (
-            <div className="space-y-2 pt-4">
-              {guidance.actions.map((action) => (
-                <Button key={action.label} className="w-full" size="default">
-                  <Plus className="h-4 w-4 mr-2" />
-                  {action.label}
-                </Button>
-              ))}
-            </div>
-          )}
           {guidance.additionalSections && guidance.additionalSections.length > 0 && (
             <div className="space-y-2 pt-4 border-t border-border">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Reference Information</p>
