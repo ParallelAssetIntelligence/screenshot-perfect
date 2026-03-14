@@ -38,7 +38,6 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
   const handleCreateInspection = async () => {
     if (!newInspectionName.trim()) return;
     setCreating(true);
-
     try {
       await db.inspections.create({
         user_id: userId,
@@ -59,7 +58,6 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
   const handleDeleteInspection = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
     if (!confirm('Are you sure you want to delete this inspection?')) return;
-
     try {
       await db.inspections.delete(id);
       await loadInspections();
@@ -79,24 +77,24 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b bg-card">
-        <div className="container flex items-center justify-between h-16 px-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-              <ClipboardCheck className="h-5 w-5 text-primary-foreground" />
+      <header className="border-b border-border bg-card">
+        <div className="flex items-center justify-between h-14 sm:h-16 px-3 sm:px-6 max-w-5xl mx-auto">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg bg-primary shrink-0">
+              <ClipboardCheck className="h-4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
             </div>
-            <h1 className="text-xl font-semibold">My Inspections</h1>
+            <h1 className="text-base sm:text-xl font-semibold truncate">My Inspections</h1>
           </div>
-          <Button variant="outline" size="sm" onClick={onSignOut}>
-            <LogOut className="h-4 w-4 mr-2" />
-            Sign Out
+          <Button variant="outline" size="sm" onClick={onSignOut} className="shrink-0">
+            <LogOut className="h-4 w-4 sm:mr-2" />
+            <span className="hidden sm:inline">Sign Out</span>
           </Button>
         </div>
       </header>
 
-      <main className="container px-4 py-8 max-w-3xl">
-        <Card className="mb-8">
-          <CardContent className="flex gap-3 p-4">
+      <main className="px-3 sm:px-6 py-4 sm:py-8 max-w-3xl mx-auto">
+        <Card className="mb-6 sm:mb-8">
+          <CardContent className="flex flex-col sm:flex-row gap-2 sm:gap-3 p-3 sm:p-4">
             <Input
               placeholder="New inspection name..."
               value={newInspectionName}
@@ -104,7 +102,7 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
               onKeyDown={(e) => e.key === 'Enter' && handleCreateInspection()}
               className="flex-1"
             />
-            <Button onClick={handleCreateInspection} disabled={creating || !newInspectionName.trim()}>
+            <Button onClick={handleCreateInspection} disabled={creating || !newInspectionName.trim()} className="w-full sm:w-auto">
               <Plus className="h-4 w-4 mr-2" />
               Create
             </Button>
@@ -119,7 +117,7 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
             <p className="text-muted-foreground">No inspections yet. Create one to get started!</p>
           </div>
         ) : (
-          <div className="space-y-3">
+          <div className="space-y-2 sm:space-y-3">
             {inspections.map((inspection, i) => (
               <Card
                 key={inspection.id}
@@ -127,9 +125,9 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
                 style={{ animationDelay: `${i * 50}ms` }}
                 onClick={() => onOpenInspection(inspection.name)}
               >
-                <CardContent className="flex items-center justify-between p-4">
+                <CardContent className="flex items-center justify-between p-3 sm:p-4">
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium truncate">{inspection.name}</h3>
+                    <h3 className="text-sm sm:text-base font-medium truncate">{inspection.name}</h3>
                     <div className="flex items-center gap-2 mt-1">
                       <Badge variant={statusColor(inspection.status) as any} className="text-xs">
                         {inspection.status.replace('_', ' ')}
@@ -137,11 +135,11 @@ export function Dashboard({ userId, onOpenInspection, onSignOut }: DashboardProp
                       <span className="text-xs text-muted-foreground">Phase {inspection.current_phase}</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 ml-4">
+                  <div className="flex items-center gap-1 sm:gap-2 ml-2 sm:ml-4 shrink-0">
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="text-destructive hover:text-destructive hover:bg-destructive/10"
+                      className="h-8 w-8 text-destructive hover:text-destructive hover:bg-destructive/10"
                       onClick={(e) => handleDeleteInspection(e, inspection.id)}
                     >
                       <Trash2 className="h-4 w-4" />
