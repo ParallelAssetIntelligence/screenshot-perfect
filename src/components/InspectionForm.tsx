@@ -26,18 +26,14 @@ export function InspectionForm({ userId, inspectionName, onBack }: InspectionFor
     evaluateCondition(field.show_if, currentPhase, store)
   );
 
-  const handleSwitchPhase = (phase: PhaseCode) => {
-    setCurrentPhase(phase);
-  };
-
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex h-screen bg-background">
       <InspectionNavigation
         phases={phases}
         currentPhase={currentPhase}
         currentIndex={0}
         totalFields={visibleFields.length}
-        onSwitchPhase={handleSwitchPhase}
+        onSwitchPhase={setCurrentPhase}
         onJump={() => {}}
         onFirst={() => {}}
         onPrevious={() => {}}
@@ -46,25 +42,25 @@ export function InspectionForm({ userId, inspectionName, onBack }: InspectionFor
         onBack={onBack}
       />
 
-      <main className="flex-1 overflow-y-auto bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 py-6">
+      <main className="flex-1 overflow-y-auto pt-14 md:pt-0">
+        <div className="max-w-5xl mx-auto px-3 sm:px-6 py-4 sm:py-6">
           <div className="mb-4">
-            <h1 className="text-xl font-semibold text-gray-900">{inspectionName}</h1>
-            <p className="text-sm text-gray-500 mt-1">
+            <h1 className="text-lg sm:text-xl font-semibold text-foreground">{inspectionName}</h1>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-1">
               {currentPhase} · {visibleFields.length} visible fields
             </p>
           </div>
 
           {fieldsLoading ? (
             <div className="flex items-center justify-center py-20">
-              <Loader2 className="h-8 w-8 animate-spin text-[#00A5E6]" />
+              <Loader2 className="h-8 w-8 animate-spin text-primary" />
             </div>
           ) : visibleFields.length === 0 ? (
-            <div className="text-center py-20 text-gray-500">
+            <div className="text-center py-20 text-muted-foreground">
               No visible fields in this section
             </div>
           ) : (
-            <div className="bg-white rounded-lg border border-gray-200">
+            <div className="bg-card rounded-lg border border-border overflow-hidden">
               {visibleFields.map((field, index) => (
                 <FormFieldRenderer
                   key={field.id}
