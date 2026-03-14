@@ -55,6 +55,7 @@ export type Database = {
           created_at: string | null
           current_field_index: number | null
           current_phase: string | null
+          form_data: Json | null
           id: string
           name: string
           status: string | null
@@ -65,6 +66,7 @@ export type Database = {
           created_at?: string | null
           current_field_index?: number | null
           current_phase?: string | null
+          form_data?: Json | null
           id?: string
           name: string
           status?: string | null
@@ -75,6 +77,7 @@ export type Database = {
           created_at?: string | null
           current_field_index?: number | null
           current_phase?: string | null
+          form_data?: Json | null
           id?: string
           name?: string
           status?: string | null

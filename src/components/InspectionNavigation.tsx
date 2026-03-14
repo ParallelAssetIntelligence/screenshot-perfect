@@ -30,96 +30,46 @@ export function InspectionNavigation({
   onBack,
 }: NavigationProps) {
   return (
-    <aside className="w-72 bg-sidebar text-sidebar-foreground flex flex-col shrink-0">
-      <div className="p-4 border-b border-sidebar-border">
+    <aside className="w-72 bg-white border-r border-gray-200 flex flex-col shrink-0">
+      <div className="p-4 border-b border-gray-200">
         <Button
           variant="ghost"
           size="sm"
           onClick={onBack}
-          className="text-sidebar-foreground hover:bg-sidebar-accent w-full justify-start"
+          className="text-gray-700 hover:bg-gray-100 w-full justify-start"
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back to Dashboard
         </Button>
       </div>
 
-      <div className="p-4 pb-2">
-        <h3 className="text-xs font-semibold uppercase tracking-wider text-sidebar-foreground/60">
-          Phases
+      <div className="px-4 py-3 bg-black">
+        <h3 className="text-sm font-semibold text-white">
+          Report Sections
         </h3>
       </div>
 
-      <ScrollArea className="flex-1 px-3">
-        <div className="space-y-1 pb-4">
+      <ScrollArea className="flex-1 bg-white">
+        <div className="py-2">
           {phases.map((phase) => (
             <button
               key={phase.code}
               onClick={() => onSwitchPhase(phase.code)}
-              className={`w-full text-left px-3 py-3 rounded-lg transition-colors ${
+              className={`w-full text-left px-4 py-2.5 transition-colors ${
                 currentPhase === phase.code
-                  ? 'bg-sidebar-primary text-sidebar-primary-foreground'
-                  : 'hover:bg-sidebar-accent text-sidebar-foreground/80'
+                  ? 'bg-[#00A5E6] text-white'
+                  : 'hover:bg-gray-50 text-gray-600'
               }`}
             >
-              <div className="flex items-center gap-3">
-                <span className="text-xl">{phase.icon}</span>
-                <div className="min-w-0">
-                  <div className="font-medium text-sm truncate">{phase.name}</div>
-                  <div className="text-xs opacity-70 truncate">{phase.subtitle}</div>
-                </div>
-              </div>
+              <div className="font-normal text-sm">{phase.name}</div>
             </button>
           ))}
         </div>
       </ScrollArea>
 
-      <div className="border-t border-sidebar-border p-4 space-y-3">
-        <div className="text-center text-sm font-medium">
-          Field {currentIndex + 1} of {totalFields}
-        </div>
-        <div className="w-full bg-sidebar-accent rounded-full h-1.5">
-          <div
-            className="bg-sidebar-primary h-1.5 rounded-full transition-all duration-300"
-            style={{ width: `${totalFields > 0 ? ((currentIndex + 1) / totalFields) * 100 : 0}%` }}
-          />
-        </div>
-        <div className="grid grid-cols-4 gap-1">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onFirst}
-            disabled={currentIndex === 0}
-            className="text-sidebar-foreground hover:bg-sidebar-accent h-9"
-          >
-            <ChevronFirst className="h-4 w-4" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onPrevious}
-            disabled={currentIndex === 0}
-            className="text-sidebar-foreground hover:bg-sidebar-accent h-9"
-          >
-            <ChevronLeft className="h-4 w-4" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onNext}
-            disabled={currentIndex >= totalFields - 1}
-            className="text-sidebar-foreground hover:bg-sidebar-accent h-9"
-          >
-            <ChevronRight className="h-4 w-4" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onLast}
-            disabled={currentIndex >= totalFields - 1}
-            className="text-sidebar-foreground hover:bg-sidebar-accent h-9"
-          >
-            <ChevronLast className="h-4 w-4" />
-          </Button>
+      <div className="border-t border-gray-200 bg-white p-4">
+        <div className="text-center text-sm font-medium text-gray-700">
+          {totalFields} {totalFields === 1 ? 'field' : 'fields'} in this section
         </div>
       </div>
     </aside>

@@ -5,6 +5,7 @@ import { usePhases } from '@/hooks/usePhases';
 import { evaluateCondition } from '@/lib/inspection-utils';
 import { FormFieldRenderer } from '@/components/FormFieldRenderer';
 import { InspectionNavigation } from '@/components/InspectionNavigation';
+import { UADGuidance } from '@/components/UADGuidance';
 import type { PhaseCode } from '@/types/inspection';
 import { Loader2 } from 'lucide-react';
 
@@ -16,7 +17,6 @@ interface InspectionFormProps {
 
 export function InspectionForm({ userId, inspectionName, onBack }: InspectionFormProps) {
   const [currentPhase, setCurrentPhase] = useState<PhaseCode>('P1');
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const { phases } = usePhases();
   const { fields, loading: fieldsLoading } = useFields(currentPhase);
@@ -25,72 +25,66 @@ export function InspectionForm({ userId, inspectionName, onBack }: InspectionFor
   const visibleFields = fields.filter(field =>
     evaluateCondition(field.show_if, currentPhase, store)
   );
-  const currentField = visibleFields[currentIndex];
 
-  const handleNext = () => {
-    if (currentIndex < visibleFields.length - 1) setCurrentIndex(currentIndex + 1);
-  };
-  const handlePrevious = () => {
-    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
-  };
-  const handleFirst = () => setCurrentIndex(0);
-  const handleLast = () => setCurrentIndex(visibleFields.length - 1);
-  const handleJump = (index: number) => {
-    if (index >= 0 && index < visibleFields.length) setCurrentIndex(index);
-  };
   const handleSwitchPhase = (phase: PhaseCode) => {
     setCurrentPhase(phase);
-    setCurrentIndex(0);
   };
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex h-screen bg-gray-50">
       <InspectionNavigation
         phases={phases}
         currentPhase={currentPhase}
-        currentIndex={currentIndex}
+        currentIndex={0}
         totalFields={visibleFields.length}
         onSwitchPhase={handleSwitchPhase}
-        onJump={handleJump}
-        onFirst={handleFirst}
-        onPrevious={handlePrevious}
-        onNext={handleNext}
-        onLast={handleLast}
+        onJump={() => {}}
+        onFirst={() => {}}
+        onPrevious={() => {}}
+        onNext={() => {}}
+        onLast={() => {}}
         onBack={onBack}
       />
 
-      <main className="flex-1 overflow-y-auto p-8">
-        <div className="max-w-2xl mx-auto">
-          <div className="mb-6">
-            <h1 className="text-lg font-semibold text-foreground">{inspectionName}</h1>
-            <p className="text-sm text-muted-foreground">
-              Phase {currentPhase} · {visibleFields.length} visible fields
+      <main className="flex-1 overflow-y-auto bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 py-6">
+          <div className="mb-4">
+            <h1 className="text-xl font-semibold text-gray-900">{inspectionName}</h1>
+            <p className="text-sm text-gray-500 mt-1">
+              {currentPhase} · {visibleFields.length} visible fields
             </p>
           </div>
 
           {fieldsLoading ? (
             <div className="flex items-center justify-center py-20">
-              <Loader2 className="h-8 w-8 animate-spin text-primary" />
+              <Loader2 className="h-8 w-8 animate-spin text-[#00A5E6]" />
             </div>
-          ) : !currentField ? (
-            <div className="text-center py-20 text-muted-foreground">
-              No visible fields in this phase
+          ) : visibleFields.length === 0 ? (
+            <div className="text-center py-20 text-gray-500">
+              No visible fields in this section
             </div>
           ) : (
-            <FormFieldRenderer
-              key={currentField.id}
-              field={currentField}
-              value={store[currentPhase][currentField.appsheet_column]}
-              included={inclusion[currentPhase][currentField.appsheet_column] ?? true}
-              onValueChange={(value) => setValue(currentPhase, currentField.appsheet_column, value)}
-              onInclusionChange={(inc) => setFieldInclusion(currentPhase, currentField.appsheet_column, inc)}
-              onToggleArrayValue={(val) => toggleArrayValue(currentPhase, currentField.appsheet_column, val)}
-              userId={userId}
-              inspectionName={inspectionName}
-            />
+            <div className="bg-white rounded-lg border border-gray-200">
+              {visibleFields.map((field, index) => (
+                <FormFieldRenderer
+                  key={field.id}
+                  field={field}
+                  value={store[currentPhase][field.appsheet_column]}
+                  included={inclusion[currentPhase][field.appsheet_column] ?? true}
+                  onValueChange={(value) => setValue(currentPhase, field.appsheet_column, value)}
+                  onInclusionChange={(inc) => setFieldInclusion(currentPhase, field.appsheet_column, inc)}
+                  onToggleArrayValue={(val) => toggleArrayValue(currentPhase, field.appsheet_column, val)}
+                  userId={userId}
+                  inspectionName={inspectionName}
+                  isLast={index === visibleFields.length - 1}
+                />
+              ))}
+            </div>
           )}
         </div>
       </main>
+
+      <UADGuidance currentPhase={currentPhase} />
     </div>
   );
 }

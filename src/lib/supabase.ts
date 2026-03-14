@@ -1,37 +1,25 @@
 import { supabase } from '@/integrations/supabase/client';
 import type { PhaseCode, UADField, PhaseMetadata, Inspection, InspectionResponse } from '@/types/inspection';
+import { getFieldsByPhase, getFieldsFromSchema, getAllPhases } from '@/data/schemaAdapter';
 
 export { supabase };
 
 export const db = {
   fields: {
     getByPhase: async (phase: PhaseCode): Promise<UADField[]> => {
-      const { data, error } = await supabase
-        .from('uad_fields')
-        .select('*')
-        .eq('phase', phase)
-        .order('field_num');
-      if (error) throw error;
-      return (data || []) as unknown as UADField[];
+      // Use local schema data instead of Supabase
+      return Promise.resolve(getFieldsByPhase(phase));
     },
     getAll: async (): Promise<UADField[]> => {
-      const { data, error } = await supabase
-        .from('uad_fields')
-        .select('*')
-        .order('phase, field_num');
-      if (error) throw error;
-      return (data || []) as unknown as UADField[];
+      // Use local schema data instead of Supabase
+      return Promise.resolve(getFieldsFromSchema());
     },
   },
 
   phases: {
     getAll: async (): Promise<PhaseMetadata[]> => {
-      const { data, error } = await supabase
-        .from('uad_phases')
-        .select('*')
-        .order('display_order');
-      if (error) throw error;
-      return (data || []) as unknown as PhaseMetadata[];
+      // Use local schema data instead of Supabase
+      return Promise.resolve(getAllPhases());
     },
   },
 
@@ -44,6 +32,16 @@ export const db = {
         .order('updated_at', { ascending: false });
       if (error) throw error;
       return (data || []) as unknown as Inspection[];
+    },
+    getByUserAndName: async (userId: string, name: string): Promise<Inspection | null> => {
+      const { data, error } = await supabase
+        .from('inspections')
+        .select('*')
+        .eq('user_id', userId)
+        .eq('name', name)
+        .single();
+      if (error && error.code !== 'PGRST116') throw error; // PGRST116 = not found
+      return data as unknown as Inspection | null;
     },
     create: async (inspection: Partial<Inspection>): Promise<Inspection> => {
       const { data, error } = await supabase
@@ -59,6 +57,17 @@ export const db = {
         .from('inspections')
         .update(updates as any)
         .eq('id', id);
+      if (error) throw error;
+    },
+    updateFormData: async (userId: string, name: string, formData: any): Promise<void> => {
+      const { error } = await supabase
+        .from('inspections')
+        .update({
+          form_data: formData,
+          updated_at: new Date().toISOString()
+        })
+        .eq('user_id', userId)
+        .eq('name', name);
       if (error) throw error;
     },
     delete: async (id: string): Promise<void> => {

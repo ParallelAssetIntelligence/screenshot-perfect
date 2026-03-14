@@ -1,0 +1,6925 @@
+{
+  "metadata": {
+    "description": "Consolidated appraisal schema from XML analysis (cleaned)",
+    "samples_analyzed": [
+      "SF1",
+      "SF3",
+      "SF5",
+      "2-to-4-unit",
+      "Condo2"
+    ],
+    "generation_date": "2026-03-14",
+    "total_fields": 380,
+    "field_type_summary": {
+      "free_text": 138,
+      "options": 166,
+      "constant": 76
+    }
+  },
+  "field_definitions": {
+    "AboutVersionIdentifier": {
+      "field_name": "AboutVersionIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2",
+        "4"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AccessType": {
+      "field_name": "AccessType",
+      "type": "options",
+      "options": [
+        "ExteriorAccessOnly",
+        "InteriorAndExteriorAccess"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "AccessibilityFeatureType": {
+      "field_name": "AccessibilityFeatureType",
+      "type": "options",
+      "options": [
+        "None",
+        "Shower"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AccessibilityModificationDescription": {
+      "field_name": "AccessibilityModificationDescription",
+      "type": "constant",
+      "options": [],
+      "default_value": "The shower has been modified.",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "AccessoryDwellingUnitIndicator": {
+      "field_name": "AccessoryDwellingUnitIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AccessoryDwellingUnitLegallyRentableIndicator@label": {
+      "field_name": "AccessoryDwellingUnitLegallyRentableIndicator@label",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "AccessoryDwellingUnitLegallyRentableIndicator_DATA_SOURCE"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "AccessoryDwellingUnitTotalCount": {
+      "field_name": "AccessoryDwellingUnitTotalCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ActualRentPerUnitFinishedAreaAmount": {
+      "field_name": "ActualRentPerUnitFinishedAreaAmount",
+      "type": "options",
+      "options": [
+        "0",
+        "1.15",
+        "1.19",
+        "1.28",
+        "1.29",
+        "2.00",
+        "2.10",
+        "2.14",
+        "2.18",
+        "2.25",
+        "2.48"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "AdditionalComparisonLineItemDescription": {
+      "field_name": "AdditionalComparisonLineItemDescription",
+      "type": "options",
+      "options": [
+        "Balcony",
+        "None",
+        "Patio",
+        "Walk Out",
+        "Walk Up"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF1"
+      ]
+    },
+    "AdditionalComparisonLineItemIdentifier": {
+      "field_name": "AdditionalComparisonLineItemIdentifier",
+      "type": "options",
+      "options": [
+        "Amenities",
+        "Below Grade Exterior Access"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF1"
+      ]
+    },
+    "AdditionalPropertyAnalyzedNotUsedText": {
+      "field_name": "AdditionalPropertyAnalyzedNotUsedText",
+      "type": "options",
+      "options": [
+        "Had 5 bedrooms, but because it was larger and farther away, it was not used.",
+        "Inferior quality and non-similar location",
+        "Located further from subject",
+        "Private sale",
+        "Property has a media room and wet bar, but is larger and of superior quality.",
+        "Superior quality and located further from subject"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "SF1",
+        "SF5"
+      ]
+    },
+    "AdditionalRentalIncomeType": {
+      "field_name": "AdditionalRentalIncomeType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "AdditionalValuationIdentifier": {
+      "field_name": "AdditionalValuationIdentifier",
+      "type": "options",
+      "options": [
+        "1234567",
+        "231495234K",
+        "2381034",
+        "4561122",
+        "543234",
+        "AA-4456767",
+        "AB12345",
+        "ABC123",
+        "AD43201",
+        "Nowhere432156"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 10,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AdditionalValuationIdentifierType": {
+      "field_name": "AdditionalValuationIdentifierType",
+      "type": "options",
+      "options": [
+        "Client",
+        "ManagementCompany",
+        "ValuationSoftwareVendor"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AddressLineText": {
+      "field_name": "AddressLineText",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "101 Somewhere Ln",
+        "123 Falling Tree Ct",
+        "123 Main St",
+        "123 Something Pl",
+        "123423 Stoneback Dr"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 48,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AddressUnitDesignatorType": {
+      "field_name": "AddressUnitDesignatorType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Unit",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "AddressUnitIdentifier": {
+      "field_name": "AddressUnitIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "3",
+        "4",
+        "B",
+        "C"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "AdjustedSalesPriceAmount": {
+      "field_name": "AdjustedSalesPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "348000",
+        "350000",
+        "353500",
+        "359500",
+        "360000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 18,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AdjustedSalesPricePerBedroomAmount": {
+      "field_name": "AdjustedSalesPricePerBedroomAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "96550",
+        "98050",
+        "99425"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "AdjustedSalesPricePerUnitAmount": {
+      "field_name": "AdjustedSalesPricePerUnitAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "193100",
+        "196100",
+        "198850"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "AmenitiesComparisonType": {
+      "field_name": "AmenitiesComparisonType",
+      "type": "options",
+      "options": [
+        "Inferior",
+        "Similar"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "AmenityAreaMeasure": {
+      "field_name": "AmenityAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "120",
+        "1200",
+        "160",
+        "168",
+        "300"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 10,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AmenityAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "AmenityAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AmenityCategoryType": {
+      "field_name": "AmenityCategoryType",
+      "type": "options",
+      "options": [
+        "Miscellaneous",
+        "OutdoorAccessories",
+        "OutdoorLiving",
+        "WaterFeatures",
+        "WholeHome"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AmenityCount": {
+      "field_name": "AmenityCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2"
+      ],
+      "sample_count": 3,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "AmenityMaterialType": {
+      "field_name": "AmenityMaterialType",
+      "type": "options",
+      "options": [
+        "Composite",
+        "Concrete",
+        "Wood"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AmenityType": {
+      "field_name": "AmenityType",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Balcony",
+        "ClubMembership",
+        "Clubhouse",
+        "Deck",
+        "Fence"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 17,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AmenityTypeOtherDescription": {
+      "field_name": "AmenityTypeOtherDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Media Room",
+        "Snow Removal",
+        "Wet Bar"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AppraisalReportEffectiveDate": {
+      "field_name": "AppraisalReportEffectiveDate",
+      "type": "options",
+      "options": [
+        "2019-09-08",
+        "2019-09-20",
+        "2023-05-01",
+        "2026-01-12"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AppraiserCompanyName": {
+      "field_name": "AppraiserCompanyName",
+      "type": "options",
+      "options": [
+        "ABC Appraisal Co.",
+        "John Appraiser Appraisal Company",
+        "XYZ Appraisal Company",
+        "XYZ Appraisals"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AppraiserDesignationType": {
+      "field_name": "AppraiserDesignationType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SeniorResidentialAppraiser",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "AppraiserFileIdentifier": {
+      "field_name": "AppraiserFileIdentifier",
+      "type": "options",
+      "options": [
+        "123456",
+        "4321123H",
+        "8238420",
+        "AA12345"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AppraiserLicenseType": {
+      "field_name": "AppraiserLicenseType",
+      "type": "options",
+      "options": [
+        "CertifiedResidential",
+        "None"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ApproximateCeilingHeightType": {
+      "field_name": "ApproximateCeilingHeightType",
+      "type": "options",
+      "options": [
+        "EightFeet",
+        "NineFeet",
+        "TenFeetAndAbove",
+        "TwoOrMoreStories"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ArchitecturalDesignCategoryType": {
+      "field_name": "ArchitecturalDesignCategoryType",
+      "type": "options",
+      "options": [
+        "Colonial",
+        "Farmhouse",
+        "Ranch",
+        "Traditional"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "AssociationChargeAmount": {
+      "field_name": "AssociationChargeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "235",
+        "34",
+        "500",
+        "525"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AssociationChargeIncludesUtilityType": {
+      "field_name": "AssociationChargeIncludesUtilityType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AssociationChargePeriodType": {
+      "field_name": "AssociationChargePeriodType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Monthly",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AssociationChargeType": {
+      "field_name": "AssociationChargeType",
+      "type": "options",
+      "options": [
+        "AssociationDues",
+        "AssociationSpecialAssessment"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AssociationSpecialAssessmentStatusType": {
+      "field_name": "AssociationSpecialAssessmentStatusType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "AttachmentType": {
+      "field_name": "AttachmentType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Detached",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "BedroomCount": {
+      "field_name": "BedroomCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "BelowGradeExteriorAccessType": {
+      "field_name": "BelowGradeExteriorAccessType",
+      "type": "constant",
+      "options": [],
+      "default_value": "WalkOut",
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "BroadbandInternetAvailableIndicator": {
+      "field_name": "BroadbandInternetAvailableIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CarStorageAreaMeasure": {
+      "field_name": "CarStorageAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "400",
+        "460",
+        "528",
+        "626",
+        "800"
+      ],
+      "sample_count": 4,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "CarStorageAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "CarStorageAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "CarStorageAttachmentType": {
+      "field_name": "CarStorageAttachmentType",
+      "type": "options",
+      "options": [
+        "Attached",
+        "BuiltIn",
+        "Detached"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CarStorageType": {
+      "field_name": "CarStorageType",
+      "type": "options",
+      "options": [
+        "Carport",
+        "Driveway",
+        "Garage"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CarStoragesComparisonType": {
+      "field_name": "CarStoragesComparisonType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Similar",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "CeilingStyleType": {
+      "field_name": "CeilingStyleType",
+      "type": "options",
+      "options": [
+        "Beams",
+        "Cathedral",
+        "Coffered",
+        "Flat"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CityName": {
+      "field_name": "CityName",
+      "type": "options",
+      "options": [
+        "Anyplace",
+        "Anytown",
+        "Nowhere",
+        "Othertown",
+        "Out There",
+        "Somewhere",
+        "Treeville"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ComparableAdjustmentAmount": {
+      "field_name": "ComparableAdjustmentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "-1000",
+        "-10000",
+        "-100000",
+        "-10300",
+        "-12000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 55,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ComparableAdjustmentType": {
+      "field_name": "ComparableAdjustmentType",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "AccessoryDwellingUnitLocation",
+        "ContractDate",
+        "DisasterMitigationFeatures",
+        "DwellingStyle",
+        "EnergyEfficientAndGreenFeatures"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 32,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ComparableToSubjectDirectionType": {
+      "field_name": "ComparableToSubjectDirectionType",
+      "type": "options",
+      "options": [
+        "East",
+        "North",
+        "NorthEast",
+        "South",
+        "West"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ComparableWeightType": {
+      "field_name": "ComparableWeightType",
+      "type": "options",
+      "options": [
+        "Less",
+        "Most"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ConstructionMethodType": {
+      "field_name": "ConstructionMethodType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SiteBuilt",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ContractDateUnknownIndicator": {
+      "field_name": "ContractDateUnknownIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CoolingSystemExistsIndicator": {
+      "field_name": "CoolingSystemExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CoolingSystemType": {
+      "field_name": "CoolingSystemType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Centralized",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CoreHeatingSystemBelowGradeIndicator": {
+      "field_name": "CoreHeatingSystemBelowGradeIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CostToRepairType": {
+      "field_name": "CostToRepairType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Itemized",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "CountyName": {
+      "field_name": "CountyName",
+      "type": "options",
+      "options": [
+        "Arboreal",
+        "Blank",
+        "Cowboy",
+        "Fabricated",
+        "Hill"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "CumulativeDaysOnMarketCount": {
+      "field_name": "CumulativeDaysOnMarketCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "13",
+        "27",
+        "81"
+      ],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "DATA_SOURCE@label": {
+      "field_name": "DATA_SOURCE@label",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "DATA_SOURCE_3D_SCAN",
+        "DATA_SOURCE_AREA",
+        "DATA_SOURCE_ASSESSOR_RECORD",
+        "DATA_SOURCE_AssessorRecord",
+        "DATA_SOURCE_BUILD_DEVELOP"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 47,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DEFECT@label": {
+      "field_name": "DEFECT@label",
+      "type": "options",
+      "options": [
+        "DEFECT_FlooringDefect",
+        "DEFECT_RoofDefect"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DataSourceIdentifier": {
+      "field_name": "DataSourceIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "123456",
+        "12458450",
+        "133832",
+        "134531",
+        "134710"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 31,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DataSourceName": {
+      "field_name": "DataSourceName",
+      "type": "options",
+      "options": [
+        "ABC MLS",
+        "Blank Gazette",
+        "Cowboy County MLS",
+        "MLS",
+        "XYZ Housing Data"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DataSourceType": {
+      "field_name": "DataSourceType",
+      "type": "options",
+      "options": [
+        "AssessorRecord",
+        "BuilderOrDeveloper",
+        "ExteriorInspection",
+        "HomeownersAssociation",
+        "MLS",
+        "PhysicalMeasurement",
+        "RealEstateAgent",
+        "ThreeDimensionalScan"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DaysOnMarketCount": {
+      "field_name": "DaysOnMarketCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "12",
+        "13",
+        "14",
+        "16",
+        "21"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 21,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DefectComponentLabelType": {
+      "field_name": "DefectComponentLabelType",
+      "type": "options",
+      "options": [
+        "Flooring",
+        "Roof"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectCostToRepairTotalAmount": {
+      "field_name": "DefectCostToRepairTotalAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1500"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemAffectsSoundnessStructuralIntegrityIndicator": {
+      "field_name": "DefectItemAffectsSoundnessStructuralIntegrityIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemDescription": {
+      "field_name": "DefectItemDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Carpet is stained in one corner of the Dining Room.",
+        "Roof is significantly worn and has damaged flashing, but no apparent active leaks."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemEstimatedCostToRepairAmount": {
+      "field_name": "DefectItemEstimatedCostToRepairAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1500"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemLocationType": {
+      "field_name": "DefectItemLocationType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Other",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemLocationTypeOtherDescription": {
+      "field_name": "DefectItemLocationTypeOtherDescription",
+      "type": "options",
+      "options": [
+        "Dining Room",
+        "Section of Roof"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DefectItemRecommendedActionType": {
+      "field_name": "DefectItemRecommendedActionType",
+      "type": "options",
+      "options": [
+        "None",
+        "Repair"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "DisasterMitigationFeatureType": {
+      "field_name": "DisasterMitigationFeatureType",
+      "type": "options",
+      "options": [
+        "ImpactResistantGlass",
+        "ImpactResistantShingles",
+        "None"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DocumentFormIssuingEntityNameType": {
+      "field_name": "DocumentFormIssuingEntityNameType",
+      "type": "constant",
+      "options": [],
+      "default_value": "FNM_FRE",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DocumentFormIssuingEntityVersionIdentifier": {
+      "field_name": "DocumentFormIssuingEntityVersionIdentifier",
+      "type": "constant",
+      "options": [],
+      "default_value": "September 2024",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DocumentType": {
+      "field_name": "DocumentType",
+      "type": "constant",
+      "options": [],
+      "default_value": "AppraisalReport",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DwellingCount": {
+      "field_name": "DwellingCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "DwellingExteriorDefectsExistIndicator": {
+      "field_name": "DwellingExteriorDefectsExistIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "EfficiencyRatingExistsIndicator": {
+      "field_name": "EfficiencyRatingExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "EfficiencyRatingName": {
+      "field_name": "EfficiencyRatingName",
+      "type": "options",
+      "options": [
+        "HERS",
+        "Home Energy Score"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1",
+        "SF3"
+      ]
+    },
+    "EfficiencyRatingOrganizationName": {
+      "field_name": "EfficiencyRatingOrganizationName",
+      "type": "options",
+      "options": [
+        "DOE",
+        "RESNET"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1",
+        "SF3"
+      ]
+    },
+    "EfficiencyRatingScoreValue": {
+      "field_name": "EfficiencyRatingScoreValue",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "61",
+        "62",
+        "65",
+        "7",
+        "8"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ElectricitySourceType": {
+      "field_name": "ElectricitySourceType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Solar",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "EnergyEfficientAndGreenDescription": {
+      "field_name": "EnergyEfficientAndGreenDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "The solar panels are leased and therefore not considered part of the real property. The lease is transferable when the subject is sold, however there is no measurable impact on value or marketability as the decision to transfer the lease would be the personal preference of any purchaser of the property."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "EnvironmentalConditionType": {
+      "field_name": "EnvironmentalConditionType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ExecutionDate": {
+      "field_name": "ExecutionDate",
+      "type": "options",
+      "options": [
+        "2019-09-08",
+        "2019-09-20",
+        "2023-05-04",
+        "2026-01-12",
+        "2026-01-16"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ExteriorConditionRatingCode": {
+      "field_name": "ExteriorConditionRatingCode",
+      "type": "options",
+      "options": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ExteriorQualityRatingCode": {
+      "field_name": "ExteriorQualityRatingCode",
+      "type": "options",
+      "options": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FeeType": {
+      "field_name": "FeeType",
+      "type": "options",
+      "options": [
+        "AppraisalFee",
+        "AppraisalManagementCompanyFee"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FinalListPriceAmount": {
+      "field_name": "FinalListPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "339900",
+        "350000",
+        "362500",
+        "364900",
+        "369900"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 21,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FirstName": {
+      "field_name": "FirstName",
+      "type": "options",
+      "options": [
+        "Agatha",
+        "Andrew",
+        "Betty",
+        "Bob",
+        "Jane",
+        "John",
+        "Mary",
+        "Michael",
+        "Sam"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FloorIdentifier": {
+      "field_name": "FloorIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "FlooringType": {
+      "field_name": "FlooringType",
+      "type": "options",
+      "options": [
+        "Carpet",
+        "CeramicTile",
+        "EngineeredWood",
+        "Hardwood",
+        "Laminate",
+        "Vinyl"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FoundationMaterialType": {
+      "field_name": "FoundationMaterialType",
+      "type": "constant",
+      "options": [],
+      "default_value": "PouredConcrete",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FoundationType": {
+      "field_name": "FoundationType",
+      "type": "options",
+      "options": [
+        "Basement",
+        "Slab"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FrontDoorApproximateElevationRangeType": {
+      "field_name": "FrontDoorApproximateElevationRangeType",
+      "type": "options",
+      "options": [
+        "GroundLevel",
+        "OneToTwoFeet",
+        "ThreeToFourFeet"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FullBathroomCount": {
+      "field_name": "FullBathroomCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FullName": {
+      "field_name": "FullName",
+      "type": "options",
+      "options": [
+        "ABC Lender",
+        "Bank of Maryland",
+        "Big Bank of Texas",
+        "DEF Bank",
+        "DIY AMC",
+        "Empty Bank",
+        "IDK Appraisal Management Company",
+        "XYZ Appraisal Management Company",
+        "XYZ Builders"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "FunctionalIssueType": {
+      "field_name": "FunctionalIssueType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "GradeLevelType": {
+      "field_name": "GradeLevelType",
+      "type": "options",
+      "options": [
+        "AboveGrade",
+        "FullyBelowGrade",
+        "PartiallyBelowGrade"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "GreenCertificationAssociationName": {
+      "field_name": "GreenCertificationAssociationName",
+      "type": "constant",
+      "options": [],
+      "default_value": "US Green Building Council",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "GreenCertificationExistsIndicator": {
+      "field_name": "GreenCertificationExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "GreenCertificationLevelAwardedYear": {
+      "field_name": "GreenCertificationLevelAwardedYear",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2025"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "GreenCertificationLevelName": {
+      "field_name": "GreenCertificationLevelName",
+      "type": "constant",
+      "options": [],
+      "default_value": "Gold",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "GreenCertificationName": {
+      "field_name": "GreenCertificationName",
+      "type": "constant",
+      "options": [],
+      "default_value": "LEED",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "GreenCertificationVersionIdentifier": {
+      "field_name": "GreenCertificationVersionIdentifier",
+      "type": "constant",
+      "options": [],
+      "default_value": "V4",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "GrossMonthlyRentMultiplierNumber": {
+      "field_name": "GrossMonthlyRentMultiplierNumber",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "75",
+        "79"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "GrossRentMultiplierFactorNumber": {
+      "field_name": "GrossRentMultiplierFactorNumber",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "75"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "HalfBathroomCount": {
+      "field_name": "HalfBathroomCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1",
+        "2"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "HazardZoneType": {
+      "field_name": "HazardZoneType",
+      "type": "constant",
+      "options": [],
+      "default_value": "None",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "HeatingFuelType": {
+      "field_name": "HeatingFuelType",
+      "type": "options",
+      "options": [
+        "Electric",
+        "NaturalGas"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "HeatingSystemExistsIndicator": {
+      "field_name": "HeatingSystemExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "HeatingSystemType": {
+      "field_name": "HeatingSystemType",
+      "type": "constant",
+      "options": [],
+      "default_value": "ForcedWarmAir",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "IMPROVEMENT@label": {
+      "field_name": "IMPROVEMENT@label",
+      "type": "constant",
+      "options": [],
+      "default_value": "IMPROVEMENT_SubjectDwelling",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "INSPECTION@label": {
+      "field_name": "INSPECTION@label",
+      "type": "options",
+      "options": [
+        "INSPECTION_APPRAISER",
+        "INSPECTION_Appraiser"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImageCaptionCommentDescription": {
+      "field_name": "ImageCaptionCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Agricultural",
+        "Appraiser's License",
+        "Bath 1",
+        "Bath 2",
+        "Bath 3"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 31,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImageCategoryType": {
+      "field_name": "ImageCategoryType",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "AbsorptionRateGraph",
+        "AssignmentExhibit",
+        "DwellingFront",
+        "DwellingRear",
+        "EnergyEfficientAndGreenFeaturesExhibit"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 20,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImageFileLocationIdentifier": {
+      "field_name": "ImageFileLocationIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "\\\\Images\\123Something.png",
+        "\\\\Images\\181Cattledrive.png",
+        "\\\\Images\\341Nothing.png",
+        "\\\\Images\\Carport.png",
+        "\\\\Images\\ComparablesMap.png"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 154,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovedSurfaceMaterialType": {
+      "field_name": "ImprovedSurfaceMaterialType",
+      "type": "options",
+      "options": [
+        "Asphalt",
+        "Concrete",
+        "Gravel"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovementComponentConditionDescription": {
+      "field_name": "ImprovementComponentConditionDescription",
+      "type": "options",
+      "options": [
+        "Foundation appears sound with typical hairline settlement cracks",
+        "Minor cracks to vinyl typical for age.",
+        "No apparent signs of damage or leaks",
+        "No damage or condition issues noted",
+        "Original carpet, stained in one corner in the Dining Room.",
+        "Recently painted with no damage or condition issues noted",
+        "Reported condition is subject to repair; see defects table and commentary below.",
+        "Updated 5-10 years ago",
+        "Updates in the last 5-10 years",
+        "Well maintained",
+        "Windows same age as house."
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ImprovementComponentConditionStatusType": {
+      "field_name": "ImprovementComponentConditionStatusType",
+      "type": "options",
+      "options": [
+        "DamagedAndFunctional",
+        "NewOrLikeNew",
+        "TypicalWearAndTear"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovementComponentConditionSummaryDescription": {
+      "field_name": "ImprovementComponentConditionSummaryDescription",
+      "type": "options",
+      "options": [
+        "Adequately maintained with moderate depreciation",
+        "Well maintained with minimal depreciation"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "ImprovementComponentQualityDescription": {
+      "field_name": "ImprovementComponentQualityDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "18\" square stone tile.",
+        "25 year rated shingles",
+        "6\" engineered oak plank.",
+        "All baths.",
+        "Basement has a custom brick wet bar that includes wood countertops."
+      ],
+      "sample_count": 4,
+      "unique_value_count": 23,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovementComponentQualitySummaryDescription": {
+      "field_name": "ImprovementComponentQualitySummaryDescription",
+      "type": "options",
+      "options": [
+        "8 Ft. Ceilings",
+        "8 Ft. | Stock",
+        "9 Ft. and 10 Ft. Ceilings",
+        "9 Ft. and 10 Ft. | Custom",
+        "9 Ft. | Custom",
+        "Carpet,Vinyl",
+        "Carpets, Tile, Hardwood",
+        "Hardwood and Tile Thruout",
+        "Nylon Short Loop and Engineered Wood",
+        "Standard 8-9 Ft. Ceilings",
+        "Stock Flooring"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "Condo2",
+        "SF3"
+      ]
+    },
+    "ImprovementComponentType": {
+      "field_name": "ImprovementComponentType",
+      "type": "options",
+      "options": [
+        "ExteriorWallsAndTrim",
+        "Flooring",
+        "Foundation",
+        "Other",
+        "Roof",
+        "WallsAndCeiling",
+        "Windows"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovementComponentTypeAdditionalDescription": {
+      "field_name": "ImprovementComponentTypeAdditionalDescription",
+      "type": "options",
+      "options": [
+        "Subject has a mix of double hung and casement windows, all are low e.",
+        "Thermal Double Hung",
+        "Thermal Double Hung and some Casement Windows",
+        "Vinyl Double Hung - Thermal Pane",
+        "Vinyl thermal pane - double hung",
+        "Wet bar with custom brick work."
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ImprovementComponentTypeOtherDescription": {
+      "field_name": "ImprovementComponentTypeOtherDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Wet Bar"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "ImprovementType": {
+      "field_name": "ImprovementType",
+      "type": "options",
+      "options": [
+        "Dwelling",
+        "Outbuilding"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "IncomeAnalysisCommentDescription": {
+      "field_name": "IncomeAnalysisCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "The appraiser's analysis of comparable sales of rental properties shows a range for the gross rent multiplier of 75 to 79. This is considered reliable and provides support for the value estimate."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "IncomeApproachIndicator": {
+      "field_name": "IncomeApproachIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "InitialListPriceAmount": {
+      "field_name": "InitialListPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "489000",
+        "825000",
+        "905000"
+      ],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "InspectionDate": {
+      "field_name": "InspectionDate",
+      "type": "options",
+      "options": [
+        "2019-09-08",
+        "2019-09-20",
+        "2023-05-01",
+        "2026-01-12"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "InteriorConditionRatingCode": {
+      "field_name": "InteriorConditionRatingCode",
+      "type": "options",
+      "options": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "InteriorQualityRatingCode": {
+      "field_name": "InteriorQualityRatingCode",
+      "type": "options",
+      "options": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LISTING_INFORMATION_SUMMARY@label": {
+      "field_name": "LISTING_INFORMATION_SUMMARY@label",
+      "type": "constant",
+      "options": [],
+      "default_value": "LISTING_INFORMATION_SUMMARY_SUBJECT",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF5"
+      ]
+    },
+    "LastName": {
+      "field_name": "LastName",
+      "type": "options",
+      "options": [
+        "Appraiser",
+        "Borrower",
+        "Doe",
+        "Jones",
+        "Seller"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LatitudeIdentifier": {
+      "field_name": "LatitudeIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "25.164174",
+        "25.164175",
+        "25.164176",
+        "25.164177",
+        "25.164178"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 21,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LeaseStartDate": {
+      "field_name": "LeaseStartDate",
+      "type": "options",
+      "options": [
+        "2022-03",
+        "2022-06",
+        "2022-07",
+        "2022-09",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-03"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "LevelCount": {
+      "field_name": "LevelCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LevelFinishedAreaMeasure": {
+      "field_name": "LevelFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1190",
+        "1232",
+        "1260",
+        "1300",
+        "1344"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 10,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LevelFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "LevelFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LevelType": {
+      "field_name": "LevelType",
+      "type": "options",
+      "options": [
+        "BelowGradeOne",
+        "LevelOne",
+        "LevelTwo"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LevelUnfinishedAreaMeasure": {
+      "field_name": "LevelUnfinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "230",
+        "320",
+        "616"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LevelUnfinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "LevelUnfinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LicenseExpirationDate": {
+      "field_name": "LicenseExpirationDate",
+      "type": "options",
+      "options": [
+        "2019-12-31",
+        "2020-04-30",
+        "2020-10-10",
+        "2024-12-31",
+        "2027-06-30",
+        "2027-10-31",
+        "2027-12-31"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LicenseIdentifier": {
+      "field_name": "LicenseIdentifier",
+      "type": "options",
+      "options": [
+        "03-XXXXXX",
+        "12345",
+        "1234ABCD",
+        "5419-2123.4",
+        "5555-2222",
+        "ABCD1234",
+        "XYZ12345"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LicenseIssuingAuthorityStateCode": {
+      "field_name": "LicenseIssuingAuthorityStateCode",
+      "type": "options",
+      "options": [
+        "IL",
+        "MD",
+        "TX",
+        "VA"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ListedWithinPreviousYearIndicator": {
+      "field_name": "ListedWithinPreviousYearIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ListingEndDate": {
+      "field_name": "ListingEndDate",
+      "type": "options",
+      "options": [
+        "2019-09-08",
+        "2019-09-17",
+        "2025-12-29"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ListingIdentifier": {
+      "field_name": "ListingIdentifier",
+      "type": "options",
+      "options": [
+        "123456",
+        "FQ999999",
+        "XYZ 0387300"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ListingStartDate": {
+      "field_name": "ListingStartDate",
+      "type": "options",
+      "options": [
+        "2019-06-20",
+        "2019-09-05",
+        "2025-12-03"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ListingStatusType": {
+      "field_name": "ListingStatusType",
+      "type": "options",
+      "options": [
+        "Active",
+        "Pending",
+        "SettledSale"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ListingType": {
+      "field_name": "ListingType",
+      "type": "options",
+      "options": [
+        "MLS",
+        "Other"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "ListingTypeOtherDescription": {
+      "field_name": "ListingTypeOtherDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Builder Or Developer"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "LivingUnitCount": {
+      "field_name": "LivingUnitCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LivingUnitExcludingADUCount": {
+      "field_name": "LivingUnitExcludingADUCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "4"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LongitudeIdentifier": {
+      "field_name": "LongitudeIdentifier",
+      "type": "options",
+      "options": [
+        "-51.328125",
+        "-51.328126",
+        "-51.328127",
+        "-51.328128",
+        "-51.328129",
+        "-51.328131",
+        "-87.784967",
+        "-87.784968",
+        "-87.784969",
+        "-87.784970",
+        "-87.784999",
+        "-87.796999",
+        "-87.886666"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 13,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LotSizeAreaMeasure": {
+      "field_name": "LotSizeAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "10.5",
+        "12.5",
+        "12.81",
+        "12950",
+        "12989"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 27,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "LotSizeAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "LotSizeAreaMeasure@AreaUnitOfMeasureType",
+      "type": "options",
+      "options": [
+        "Acres",
+        "SquareFeet"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MARKET_TREND@label": {
+      "field_name": "MARKET_TREND@label",
+      "type": "options",
+      "options": [
+        "MARKET_TREND_1",
+        "MARKET_TREND_DATASOURCE",
+        "MARKET_TREND_DATA_SOURCE",
+        "MARKET_TREND_SOURCE",
+        "MARKET_TREND_SUBJECT"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MESSAGE@MISMOReferenceModelIdentifier": {
+      "field_name": "MESSAGE@MISMOReferenceModelIdentifier",
+      "type": "constant",
+      "options": [],
+      "default_value": "3.6.0366",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MESSAGE@schemaLocation": {
+      "field_name": "MESSAGE@schemaLocation",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "http://www.mismo.org/residential/2009/schemas file:///C:/Users/b2ubck/Fannie%20Mae/OneDrive%20-%20Fannie%20Mae/Bhargavi@UMDP/Docs/UAD%20MISMO/builds/Subschema/GSE_UAD_3.6.0_v1.3/Combined/GSE_UAD_3.6.0_v1.3.xsd",
+        "http://www.mismo.org/residential/2009/schemas file:///C:/Users/b2ubck/Fannie%20Mae/OneDrive%20-%20Fannie%20Mae/Desktop/Subschema/GSE_UAD_3.6.0_v1.4_01222026/GSE_UAD_3.6.0_v1.4/GSE_UAD_3.6.0_v1.4.xsd"
+      ],
+      "sample_count": 4,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MIMETypeIdentifier": {
+      "field_name": "MIMETypeIdentifier",
+      "type": "options",
+      "options": [
+        "application/pdf",
+        "image/jpeg",
+        "image/png"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketBoundariesDescription": {
+      "field_name": "MarketBoundariesDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "North: E. Grant Highway, South: E. Temple Ave., East: Chicken Rd., West: 10 Main Ave.",
+        "Pioneer Drive to the North, Bailey Road to the East, Military Road to the South, Radio Drive to the West.",
+        "Route 7 to the north, Route 611 to the east and Route 50 to the south and west",
+        "The subject's market area is bounded to the North by I-20, to the East by Sundown Parkway, to the South by Main Street, and to the West by Cowboy County State Park.",
+        "The subject's market area is framed to the North by I-70, to the East by Main Street, to the South and West by George Washington Park."
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryCount": {
+      "field_name": "MarketInventoryCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "12",
+        "15",
+        "18",
+        "2"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 12,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryHighestPriceAmount": {
+      "field_name": "MarketInventoryHighestPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1350000",
+        "1450000",
+        "369000",
+        "370000",
+        "445000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 10,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryLookbackMonthsCount": {
+      "field_name": "MarketInventoryLookbackMonthsCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "12",
+        "24"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryLowestPriceAmount": {
+      "field_name": "MarketInventoryLowestPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "325000",
+        "400000",
+        "435000",
+        "535000",
+        "550000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryMedianDaysOnMarketCount": {
+      "field_name": "MarketInventoryMedianDaysOnMarketCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "11",
+        "125",
+        "43",
+        "44",
+        "52"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryMedianPriceAmount": {
+      "field_name": "MarketInventoryMedianPriceAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "340000",
+        "349000",
+        "440000",
+        "499000",
+        "800000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventorySearchParameterDescription": {
+      "field_name": "MarketInventorySearchParameterDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Limiting factors of the market search include a Lot Size between 10 and 20 acres with a property containing an ADU. Above Grade Finished area of the primary dwelling in the range of 1,800 and 4,500 square feet, with between 3-5 bedrooms and 2-4 bathrooms. Vehicle Storage greater than or equal to a 2-car garage. Closing dates between 08/18/2018 and 08/30/2019. And, equivalent zoning that allows agricultural and residential use.",
+        "Search Criteria limited by Detached units with a lot size of up to .6 acres and Finished Above Grade Area between 2700 and 3300 sq. ft. Additional factors include between 2-4 full bathrooms, 3-5 bedrooms, a basement and a 2 car garage. Searched between closing dates of 9/30/2017 and 9/30/2019.",
+        "Search limited to detached condominium housing with a footprint between 1,300-1,800 Sq. Ft. Additional limiting factors include 2-4 bedrooms, 2-4 bathrooms, and a basement.",
+        "The pool of potential comparable sales was arrived at by applying the following filters: 3 bedroom, 2 bath built within the past 10 years, located within the subject's market area (east of Washington Park) during the past 12 months.",
+        "The pool of potential comparable sales was arrived at by applying the following filters: 4 unit properties built within the past 20 years, located within a 5 mile radius of the subject, sold during the past 12 months."
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketInventoryType": {
+      "field_name": "MarketInventoryType",
+      "type": "options",
+      "options": [
+        "ActiveListings",
+        "PendingSales",
+        "TotalSales"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketSupplyTrendType": {
+      "field_name": "MarketSupplyTrendType",
+      "type": "options",
+      "options": [
+        "InBalance",
+        "Shortage"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketingOrExposureHighRangeDaysCount": {
+      "field_name": "MarketingOrExposureHighRangeDaysCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "60",
+        "90"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketingOrExposureLowRangeDaysCount": {
+      "field_name": "MarketingOrExposureLowRangeDaysCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "30",
+        "60"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketingOrExposureTimeType": {
+      "field_name": "MarketingOrExposureTimeType",
+      "type": "constant",
+      "options": [],
+      "default_value": "ReasonableExposureTime",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MarketingTimeType": {
+      "field_name": "MarketingTimeType",
+      "type": "options",
+      "options": [
+        "ThreeToSixMonths",
+        "UnderThreeMonths"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MeasurementStandardPublisherType": {
+      "field_name": "MeasurementStandardPublisherType",
+      "type": "options",
+      "options": [
+        "AmericanNationalStandardsInstitute",
+        "Other"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MeasurementStandardPublisherTypeOtherDescription": {
+      "field_name": "MeasurementStandardPublisherTypeOtherDescription",
+      "type": "constant",
+      "options": [],
+      "default_value": "Not Applicable due to property type",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "MechanicalSystemType": {
+      "field_name": "MechanicalSystemType",
+      "type": "options",
+      "options": [
+        "SumpPump",
+        "WaterHeater",
+        "WholeHouseWaterTreatment"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "MiddleName": {
+      "field_name": "MiddleName",
+      "type": "constant",
+      "options": [],
+      "default_value": "P.",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "MonthlyActualAdditionalIncomeAmount": {
+      "field_name": "MonthlyActualAdditionalIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "MonthlyEstimatedAdditionalIncomeAmount": {
+      "field_name": "MonthlyEstimatedAdditionalIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "NeighborhoodName": {
+      "field_name": "NeighborhoodName",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Bighorn Ranch",
+        "Ducks on the Pond",
+        "Grammy Gold",
+        "Hilldale",
+        "Hilltop Hills"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "NewConstructionIndicator": {
+      "field_name": "NewConstructionIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "NonContinuousFinishedAreaIndicator": {
+      "field_name": "NonContinuousFinishedAreaIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ObjectURL": {
+      "field_name": "ObjectURL",
+      "type": "options",
+      "options": [
+        "SF5_Appraisal_v1.2.pdf",
+        "\\\\2-to4-unit_Scenario_2_Appraisal_v1.2.pdf",
+        "\\\\Condo2_Appraisal_v1.4.pdf",
+        "\\\\SF1_Appraisal_v1.4.pdf",
+        "\\\\SF3_Appraisal_v1.4.pdf"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OpinionOfValueAmount": {
+      "field_name": "OpinionOfValueAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "350000",
+        "491000",
+        "775000",
+        "785000",
+        "900000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OutbuildingType": {
+      "field_name": "OutbuildingType",
+      "type": "options",
+      "options": [
+        "Other",
+        "PoolHouse",
+        "Stable",
+        "StandaloneADU",
+        "Studio"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "OutbuildingTypeOtherDescription": {
+      "field_name": "OutbuildingTypeOtherDescription",
+      "type": "constant",
+      "options": [],
+      "default_value": "ADUGarage",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "OverallBathroomsQualityDescription": {
+      "field_name": "OverallBathroomsQualityDescription",
+      "type": "options",
+      "options": [
+        "Mid Grade Finish",
+        "Mid Grade Finishes",
+        "Mid-Grade Finishes",
+        "Mid-High Quality Finishes",
+        "Mixture of Tile and Granite",
+        "Very High Quality Finishes"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "Condo2",
+        "SF3"
+      ]
+    },
+    "OverallBathroomsUpdateStatusType": {
+      "field_name": "OverallBathroomsUpdateStatusType",
+      "type": "options",
+      "options": [
+        "FullyUpdated",
+        "ModeratelyUpdated",
+        "NotUpdated"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OverallConditionRatingCode": {
+      "field_name": "OverallConditionRatingCode",
+      "type": "options",
+      "options": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OverallFlooringUpdateStatusType": {
+      "field_name": "OverallFlooringUpdateStatusType",
+      "type": "options",
+      "options": [
+        "FullyUpdated",
+        "ModeratelyUpdated",
+        "NotUpdated"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OverallQualityRatingCode": {
+      "field_name": "OverallQualityRatingCode",
+      "type": "options",
+      "options": [
+        "Q2",
+        "Q3",
+        "Q4"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OwnershipTransferDate": {
+      "field_name": "OwnershipTransferDate",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2013-01-24",
+        "2015-02-23",
+        "2016-07-17",
+        "2018-09-01",
+        "2019-01-01"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 34,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OwnershipTransferTransactionAmount": {
+      "field_name": "OwnershipTransferTransactionAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "195250",
+        "250000",
+        "2500000",
+        "275000",
+        "295000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 27,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "OwnershipTransferTransactionType": {
+      "field_name": "OwnershipTransferTransactionType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Sale",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PROJECT@label": {
+      "field_name": "PROJECT@label",
+      "type": "options",
+      "options": [
+        "PROJECT_1",
+        "PROJECT_DATA_SOURCE"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "PROPERTY@ValuationUseType": {
+      "field_name": "PROPERTY@ValuationUseType",
+      "type": "options",
+      "options": [
+        "GrossRentMultiplierComparable",
+        "LandComparable",
+        "PropertyAnalyzedNotUsed",
+        "RentalComparable",
+        "SalesComparable",
+        "SubjectProperty"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PROPERTY@label": {
+      "field_name": "PROPERTY@label",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "PROPERTY_COMP1",
+        "PROPERTY_COMP2",
+        "PROPERTY_COMP3",
+        "PROPERTY_COMP4",
+        "PROPERTY_COMP5"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 30,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PROPERTY_UNIT@label": {
+      "field_name": "PROPERTY_UNIT@label",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "PROPERTY_UNIT_COMP1_ADU",
+        "PROPERTY_UNIT_COMP1_Primary",
+        "PROPERTY_UNIT_COMP2_ADU",
+        "PROPERTY_UNIT_COMP2_Primary",
+        "PROPERTY_UNIT_COMP3_ADU"
+      ],
+      "sample_count": 3,
+      "unique_value_count": 25,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "PROPERTY_UNIT_AREA@label": {
+      "field_name": "PROPERTY_UNIT_AREA@label",
+      "type": "options",
+      "options": [
+        "PROPERTY_UNIT_AREA_ADU_DATA_SOURCE",
+        "PROPERTY_UNIT_AREA_DATA_SOURCE",
+        "PROPERTY_UNIT_AREA_SubjectPropertyArea",
+        "PROPERTY_UNIT_AREA_UNIT_A",
+        "PROPERTY_UNIT_AREA_UNIT_B",
+        "PROPERTY_UNIT_AREA_UNIT_C",
+        "PROPERTY_UNIT_AREA_UNIT_D"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PUDIndicator": {
+      "field_name": "PUDIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelAreaMeasure": {
+      "field_name": "ParcelAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "13939",
+        "14.19",
+        "14950",
+        "15000",
+        "21000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "ParcelAreaMeasure@AreaUnitOfMeasureType",
+      "type": "options",
+      "options": [
+        "Acres",
+        "SquareFeet"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelCount": {
+      "field_name": "ParcelCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelDescriptionClassificationType": {
+      "field_name": "ParcelDescriptionClassificationType",
+      "type": "constant",
+      "options": [],
+      "default_value": "LandWithDwelling",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelIdentificationType": {
+      "field_name": "ParcelIdentificationType",
+      "type": "options",
+      "options": [
+        "AlternativePropertyIdentifier",
+        "AssessorUnformattedIdentifier"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelIdentifier": {
+      "field_name": "ParcelIdentifier",
+      "type": "options",
+      "options": [
+        "1234-56-7891-000",
+        "300.200.1000",
+        "F-124-0",
+        "F-234-1",
+        "F-593-9",
+        "KLWMDFMW",
+        "US-51061-N-1234567891000-R-N",
+        "WES1932",
+        "Z-495-2"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParcelIdentifierOwnerName": {
+      "field_name": "ParcelIdentifierOwnerName",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Universal Property Identifier"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "ParcelsLegalDescription": {
+      "field_name": "ParcelsLegalDescription",
+      "type": "options",
+      "options": [
+        "Dwelling No. 8675309 in the condominium project known as Grammy Gold",
+        "Lot 2 Block A Bighorn Ranch",
+        "Lot 3 Block 8 Section 2 of Hilltop Hills",
+        "Lot 53 Sunnyside Subdivision",
+        "Unreal Farms-2 S.2 PCL.234200121102003 Z-495-2"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ParkingSpacesCount": {
+      "field_name": "ParkingSpacesCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PartyRoleType": {
+      "field_name": "PartyRoleType",
+      "type": "options",
+      "options": [
+        "Appraiser",
+        "Borrower",
+        "Client",
+        "Lender",
+        "ManagementCompany",
+        "PropertyOwner",
+        "PropertySeller",
+        "SignificantRealPropertyAppraisalAssistance"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PartyRoleTypeAdditionalDescription": {
+      "field_name": "PartyRoleTypeAdditionalDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Andrew Appraiser, a trainee appraiser, filled out the Market section, provided the Market Analysis, assisted in measuring property, and did an exterior inspection of the comparables from the street."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "PersonalPropertyIncludedIndicator": {
+      "field_name": "PersonalPropertyIncludedIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "PostalCode": {
+      "field_name": "PostalCode",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "01234",
+        "09991",
+        "09992",
+        "12345",
+        "12346"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PricePerTotalStandardAboveGradeFinishedAreaAmount": {
+      "field_name": "PricePerTotalStandardAboveGradeFinishedAreaAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "141",
+        "160",
+        "185",
+        "215",
+        "221"
+      ],
+      "sample_count": 4,
+      "unique_value_count": 14,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PricePerUnitOfMeasureTypeForTotalFinishedAreaOfAllLivingUnitsIncludingADUAmount": {
+      "field_name": "PricePerUnitOfMeasureTypeForTotalFinishedAreaOfAllLivingUnitsIncludingADUAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "132",
+        "155",
+        "159"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "PriceTrendsAnalysisDescription": {
+      "field_name": "PriceTrendsAnalysisDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "An analysis of the sales in the past year for the subject's market area shows sales volume to be stable across the year. Supply and demand are in balance and the absorption rate is in line with historical trends. Sales prices in the market have been increasing.",
+        "The subject is located in a suburban area where there has not been a robust sales market for new construction within a golf community. To develop a reasonable price trend there was a need to go back 12 months to review enough activity to develop a market trend. The inventory remains low to moderate, and homes are selling in less than 60 days on average."
+      ],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "PriorSalesOrTransfersIndicator": {
+      "field_name": "PriorSalesOrTransfersIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PriorSalesOrTransfersIndicator@label": {
+      "field_name": "PriorSalesOrTransfersIndicator@label",
+      "type": "options",
+      "options": [
+        "PriorSalesOrTransfersIndicator_COMP2",
+        "PriorSalesOrTransfersIndicator_COMP3",
+        "PriorSalesOrTransfersIndicator_COMP4",
+        "PriorSalesOrTransfersIndicator_Comp1",
+        "PriorSalesOrTransfersIndicator_Comp3",
+        "PriorSalesOrTransfersIndicator_Comp4",
+        "PriorSalesOrTransfersIndicator_SALES_COMP_1",
+        "PriorSalesOrTransfersIndicator_SALES_COMP_2",
+        "PriorSalesOrTransfersIndicator_SALES_COMP_3",
+        "PriorSalesOrTransfersIndicator_SUBJECT",
+        "PriorSalesOrTransfersIndicator_SalesComp2NoPriorSales",
+        "PriorSalesOrTransfersIndicator_SalesComp3NoPriorSales",
+        "PriorSalesOrTransfersIndicator_SubjectPropertyNoPriorSales"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 13,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ProjectDwellingUnitCount": {
+      "field_name": "ProjectDwellingUnitCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "50"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectDwellingUnitsForSaleCount": {
+      "field_name": "ProjectDwellingUnitsForSaleCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "3"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectDwellingUnitsRentedCount": {
+      "field_name": "ProjectDwellingUnitsRentedCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectDwellingUnitsRentedEstimateDescription": {
+      "field_name": "ProjectDwellingUnitsRentedEstimateDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "The data shows only two off-site mailing addresses, therefore assumed that they are rented units."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectDwellingUnitsSoldCount": {
+      "field_name": "ProjectDwellingUnitsSoldCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "47"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectLegalStructureType": {
+      "field_name": "ProjectLegalStructureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Condominium",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ProjectName": {
+      "field_name": "ProjectName",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Fox Hollow",
+        "Grammy Gold",
+        "Platinum Records",
+        "XYZ Project"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "PropertyAccessDescription": {
+      "field_name": "PropertyAccessDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Subject's project has designated private asphalt roads. The responsibilities and maintenance of these roads is outlined and stated in the condominium master deed which is recorded. Private roads within condominium complexes in this area are common and have no adverse effect on marketability."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "PropertyAmenityExistsIndicator": {
+      "field_name": "PropertyAmenityExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyAsIsConditionRatingCode": {
+      "field_name": "PropertyAsIsConditionRatingCode",
+      "type": "constant",
+      "options": [],
+      "default_value": "C5",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "PropertyEstateType": {
+      "field_name": "PropertyEstateType",
+      "type": "constant",
+      "options": [],
+      "default_value": "FeeSimple",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyExteriorInspectionMethodType": {
+      "field_name": "PropertyExteriorInspectionMethodType",
+      "type": "options",
+      "options": [
+        "NoInspection",
+        "Physical"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyInProjectIndicator": {
+      "field_name": "PropertyInProjectIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyInteriorInspectionMethodType": {
+      "field_name": "PropertyInteriorInspectionMethodType",
+      "type": "options",
+      "options": [
+        "NoInspection",
+        "Physical"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyOrdinalNumber": {
+      "field_name": "PropertyOrdinalNumber",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyPrimaryEntryExitMethodType": {
+      "field_name": "PropertyPrimaryEntryExitMethodType",
+      "type": "options",
+      "options": [
+        "PrivateStreet",
+        "PublicStreet"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyStructureBuiltYear": {
+      "field_name": "PropertyStructureBuiltYear",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1938",
+        "1979",
+        "1980",
+        "1984",
+        "2001"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 14,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyValuationConditionalConclusionType": {
+      "field_name": "PropertyValuationConditionalConclusionType",
+      "type": "options",
+      "options": [
+        "AsIs",
+        "SubjectToRepair"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "PropertyValuationMethodType": {
+      "field_name": "PropertyValuationMethodType",
+      "type": "options",
+      "options": [
+        "DesktopAppraisal",
+        "TraditionalAppraisal"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ProvidedServiceActualCostAmount": {
+      "field_name": "ProvidedServiceActualCostAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 4,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ProximityToSubjectDistanceLinearMeasure": {
+      "field_name": "ProximityToSubjectDistanceLinearMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        ".12",
+        ".75",
+        ".85",
+        "0.06",
+        "0.12"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 22,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ProximityToSubjectDistanceLinearMeasure@LinearUnitOfMeasureType": {
+      "field_name": "ProximityToSubjectDistanceLinearMeasure@LinearUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Miles",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RELATIONSHIP@arcrole": {
+      "field_name": "RELATIONSHIP@arcrole",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "urn:fdc:mismo.org:2009:residential/DATA_SOURCE_IsDataSourceFor_AccessoryDwellingUnitLegallyRentableIndicator",
+        "urn:fdc:mismo.org:2009:residential/DATA_SOURCE_IsDataSourceFor_LISTING_INFORMATION_SUMMARY",
+        "urn:fdc:mismo.org:2009:residential/DATA_SOURCE_IsDataSourceFor_MARKET_TREND",
+        "urn:fdc:mismo.org:2009:residential/DATA_SOURCE_IsDataSourceFor_PROJECT",
+        "urn:fdc:mismo.org:2009:residential/DATA_SOURCE_IsDataSourceFor_PROPERTY"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 14,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RELATIONSHIP@from": {
+      "field_name": "RELATIONSHIP@from",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "DATA_SOURCE_3D_SCAN",
+        "DATA_SOURCE_AREA",
+        "DATA_SOURCE_ASSESSOR_RECORD",
+        "DATA_SOURCE_AssessorRecord",
+        "DATA_SOURCE_BUILD_DEVELOP"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 87,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RELATIONSHIP@to": {
+      "field_name": "RELATIONSHIP@to",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "AccessoryDwellingUnitLegallyRentableIndicator_DATA_SOURCE",
+        "IMPROVEMENT_SubjectDwelling",
+        "LISTING_INFORMATION_SUMMARY_SUBJECT",
+        "MARKET_TREND_1",
+        "MARKET_TREND_DATASOURCE"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 81,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RENTAL_INFORMATION@label": {
+      "field_name": "RENTAL_INFORMATION@label",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "RENTAL_INFORMATION_RENTCOMP1",
+        "RENTAL_INFORMATION_RENTCOMP1_SUBJECTUNITA",
+        "RENTAL_INFORMATION_RENTCOMP1_SUBJECTUNITB",
+        "RENTAL_INFORMATION_RENTCOMP2",
+        "RENTAL_INFORMATION_RENTCOMP2_SUBJECTUNITC"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 21,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "ROLE@label": {
+      "field_name": "ROLE@label",
+      "type": "options",
+      "options": [
+        "ROLE_APPRAISER",
+        "ROLE_Appraiser"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ReasonPropertyNotUsedType": {
+      "field_name": "ReasonPropertyNotUsedType",
+      "type": "options",
+      "options": [
+        "GrossLivingArea",
+        "Proximity",
+        "Quality",
+        "SaleOrTransferType"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "SF1",
+        "SF5"
+      ]
+    },
+    "ReconsiderationOfValueCommentDescription": {
+      "field_name": "ReconsiderationOfValueCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "The borrower provided 3 sales which were not in Hilltop Hills but were within the market area. After analyzing the sales provided and adding comps 4 and 5 to the sales grid, there was support for a change in value."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "ReconsiderationOfValueIndicator": {
+      "field_name": "ReconsiderationOfValueIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ReconsiderationOfValueRequestedByType": {
+      "field_name": "ReconsiderationOfValueRequestedByType",
+      "type": "constant",
+      "options": [],
+      "default_value": "BorrowerInitiated",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "ReconsiderationOfValueResultDate": {
+      "field_name": "ReconsiderationOfValueResultDate",
+      "type": "constant",
+      "options": [],
+      "default_value": "2026-01-16",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "ReconsiderationOfValueResultType": {
+      "field_name": "ReconsiderationOfValueResultType",
+      "type": "constant",
+      "options": [],
+      "default_value": "ValueChange",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "RenewableEnergyComponentExistsIndicator": {
+      "field_name": "RenewableEnergyComponentExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RenewableEnergyComponentOwnershipType": {
+      "field_name": "RenewableEnergyComponentOwnershipType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Leased",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "RenewableEnergyComponentType": {
+      "field_name": "RenewableEnergyComponentType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Solar",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "RentControlStatusType": {
+      "field_name": "RentControlStatusType",
+      "type": "constant",
+      "options": [],
+      "default_value": "No",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "RentScheduleIndicator": {
+      "field_name": "RentScheduleIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RentalUnitAdjustedRentAmount": {
+      "field_name": "RentalUnitAdjustedRentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2550",
+        "2575",
+        "2600",
+        "2650",
+        "3400"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "RentalUnitToSubjectComparisonType": {
+      "field_name": "RentalUnitToSubjectComparisonType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Similar",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "RevisionCategoryType": {
+      "field_name": "RevisionCategoryType",
+      "type": "options",
+      "options": [
+        "Reconciliation",
+        "SalesComparisonApproach"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "RevisionDate": {
+      "field_name": "RevisionDate",
+      "type": "constant",
+      "options": [],
+      "default_value": "2026-01-16",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "RevisionText": {
+      "field_name": "RevisionText",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Due to the increase in Indicated Value by Sales Comparison Approach, the Opinion of Value changed.",
+        "The comparables provided from the borrower-initiated ROV were reviewed and considered. Two sales were deemed reliable and put in the sales grid, which increased the Indicated Value by Sales Comparison Approach. One was deemed less reliable and added to Additional Properties Analyzed Not Used."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF5"
+      ]
+    },
+    "RoofEstimatedAgeRangeType": {
+      "field_name": "RoofEstimatedAgeRangeType",
+      "type": "options",
+      "options": [
+        "LessThanOneYear",
+        "OneToTenYears",
+        "TenToTwentyYears"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoofMaterialType": {
+      "field_name": "RoofMaterialType",
+      "type": "options",
+      "options": [
+        "Asphalt",
+        "Composition",
+        "Metal"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoomConditionAdditionalDescription": {
+      "field_name": "RoomConditionAdditionalDescription",
+      "type": "options",
+      "options": [
+        "Half bath newer than rest of house.",
+        "Maintained",
+        "No damage or condition issues noted",
+        "Recent update and upgrade",
+        "Recently received a gut renovation",
+        "Well Maintained"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "SF1",
+        "SF3"
+      ]
+    },
+    "RoomConditionStatusType": {
+      "field_name": "RoomConditionStatusType",
+      "type": "options",
+      "options": [
+        "NewOrLikeNew",
+        "TypicalWearAndTear"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoomQualityDescription": {
+      "field_name": "RoomQualityDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Ceramic flooring.",
+        "Corian Countertops, Double Oven, Hardwood floors.",
+        "Double Sink with separate shower and extra-large tub, ceramic flooring.",
+        "Pedestal sink, tile floor.",
+        "Separate tub and shower, large room, tile on the floor and walls, granite counters."
+      ],
+      "sample_count": 4,
+      "unique_value_count": 15,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoomQualitySummaryDescription": {
+      "field_name": "RoomQualitySummaryDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Commercial Grade Appliances",
+        "Mid Grade Quality",
+        "Stock Grade Appliances",
+        "Very High Quality Appliances"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "Condo2",
+        "SF3"
+      ]
+    },
+    "RoomType": {
+      "field_name": "RoomType",
+      "type": "options",
+      "options": [
+        "Bedroom",
+        "Den",
+        "DiningRoom",
+        "FamilyRoom",
+        "FullBathroom",
+        "HalfBathroom",
+        "Kitchen",
+        "LaundryRoom",
+        "LivingRoom",
+        "MediaRoom",
+        "Mudroom",
+        "Other",
+        "RecreationRoom",
+        "Sunroom"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 14,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoomTypeOtherDescription": {
+      "field_name": "RoomTypeOtherDescription",
+      "type": "options",
+      "options": [
+        "Office",
+        "Wet Bar"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1"
+      ]
+    },
+    "RoomUpdateStatusType": {
+      "field_name": "RoomUpdateStatusType",
+      "type": "options",
+      "options": [
+        "FullyUpdated",
+        "NotUpdated",
+        "PartiallyUpdated"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "RoomUpdatedTimeframeType": {
+      "field_name": "RoomUpdatedTimeframeType",
+      "type": "options",
+      "options": [
+        "FiveToTenYears",
+        "LessThanOneYear",
+        "OneToFiveYears"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "SALES_HISTORY@label": {
+      "field_name": "SALES_HISTORY@label",
+      "type": "options",
+      "options": [
+        "SALES_HISTORY_COMP1",
+        "SALES_HISTORY_COMP2",
+        "SALES_HISTORY_COMP3",
+        "SALES_HISTORY_COMP5",
+        "SALES_HISTORY_DATASOURCE",
+        "SALES_HISTORY_SUBJECT",
+        "SALES_HISTORY_SalesComp1_PriorSales"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 7,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SIGNATORY@label": {
+      "field_name": "SIGNATORY@label",
+      "type": "options",
+      "options": [
+        "SIGNATORY_APPRAISER",
+        "SIGNATORY_Appraiser"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SalePriceNetTotalAdjustmentAmount": {
+      "field_name": "SalePriceNetTotalAdjustmentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "-11400",
+        "-12250",
+        "-2000",
+        "-41900",
+        "-54600"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 16,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SaleType": {
+      "field_name": "SaleType",
+      "type": "options",
+      "options": [
+        "PreSubdivisionSale",
+        "TypicallyMotivated"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SalesComparisonCommentDescription": {
+      "field_name": "SalesComparisonCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "All comparables utilized were 4 unit properties. The time adjustment reflects approximately 1% per month for each comparable. The comparables were built in approximately the same time period offering similar overall utility. Most emphasis is placed on comparable 3, which best reflects the subject property.",
+        "Comps 1 and 2 were from the same neighborhood as the Subject. Comp 3 not given as much weight because of different subdivision. Condition Rating adjustments were made to all comps due to the subject's flooring having stained carpets and no updates. Comp 1 also had a partially updated kitchen which was accounted for in the Condition Rating adjustment. Sales with property characteristics of 5 bedrooms, media room and wet bar were in the competitive market area, exhibited in #4 and 5 of the Additional Properties Analyzed Not Used, but were not as comparable since they were larger, farther away, and superior quality.",
+        "The comparable properties used are detached condominiums which are similar to the subject property in ownership rights conveyed, design/style, and functional utility. Comparable #1 is located within a competing gated community that is within the subject market area. Comparable #2 is not sited in a gated community which required adjustments for Project and Location. Comparable #3 is a recent sale of a newly constructed model match from the subject project. Comparable #4 is an Active Listing from the subject project. Collectively, these comparables serve as reliable indicators of value and marketability for the subject property.",
+        "The comparables contain 3 bedrooms and were built in approximately the same time period, offering similar overall utility. No time adjustments were warranted as there has been no recent measurable change in market prices. Most emphasis is placed on comparables 4 and 5, which although located further away are still within the subject's market area.",
+        "The subject and comparables are located within a market area that has a rural nature while being within 40 miles commuting distance to the Northern Virginia and Washington, DC metropolitan and suburban area business and government centers. Within this market segment larger lots with pastoral views and accessory structures and outbuildings are typical. However, sales of properties with accessory dwelling units, while not uncommon, can be difficult to identify as the units are often not advertised as separate living areas. Comparables #1 and #2 are given greatest consideration as they contain accessory dwelling units that are located within the main dwelling but are otherwise similar to the subject's accessory unit. Comparables #1 and #2 are also similar to the subject in age and Comparable #2 is most similar to the subject in level and quality of updates. Comparable #3 has a garage, an ADU, and a seperate studio. The ADU shares a common wall with the garage. However, Comparable #3 receives least consideration as it is an older farmhouse that has been gut renovated, including foundation work to upgrade and provide additional support. The renovation was completed with a high level of quality and craftsmanship while maintaining vintage characteristics (e.g., random width wood flooring and trim that has been restored and refinished) which may appeal to a different buyer pool than houses of the subject and comparable #1 and #2's vintage."
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SalesConcessionAmountKnownIndicator": {
+      "field_name": "SalesConcessionAmountKnownIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF5"
+      ]
+    },
+    "SalesConcessionIndicator": {
+      "field_name": "SalesConcessionIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SalesContractAmount": {
+      "field_name": "SalesContractAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "489000",
+        "770000",
+        "895000"
+      ],
+      "sample_count": 3,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "SalesContractDate": {
+      "field_name": "SalesContractDate",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2018-07-01",
+        "2019-04-01",
+        "2019-06-01",
+        "2019-07-02",
+        "2019-07-22"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 18,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SalesContractExistsIndicator": {
+      "field_name": "SalesContractExistsIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SameBuilderAsSubjectIndicator": {
+      "field_name": "SameBuilderAsSubjectIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "SameProjectAsSubjectIndicator": {
+      "field_name": "SameProjectAsSubjectIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "ServiceType": {
+      "field_name": "ServiceType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Valuation",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SewerSystemType": {
+      "field_name": "SewerSystemType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Septic",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SingleEntityGreatestNumberOfUnitsCount": {
+      "field_name": "SingleEntityGreatestNumberOfUnitsCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "3"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "SiteEstimatedValueAmount": {
+      "field_name": "SiteEstimatedValueAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "284000"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SiteEstimatedValueCommentDescription": {
+      "field_name": "SiteEstimatedValueCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Recent sales for vacant and unimproved lots within the subject's market area were analyzed to determine the opinion of site value for the subject. Six sales were identified in the subject's zip code that ranged in lot size from 7.3 acres to 21.2 acres with sale prices ranging from $175,000 to $315,000. The comparable sales selected all have RA-10 zoning (same as subject), were the most proximate sales that were similar in site size to the subject and sold for $19,000 to $22,000 per acre (rounded). The opinion of value for the subject's site was reconciled at $20,000 (rounded) per acre."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SiteFeatureDescription": {
+      "field_name": "SiteFeatureDescription",
+      "type": "constant",
+      "options": [],
+      "default_value": "Steep grade is less marketable.",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "SiteFeatureType": {
+      "field_name": "SiteFeatureType",
+      "type": "options",
+      "options": [
+        "None",
+        "Topography"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteInfluenceDescription": {
+      "field_name": "SiteInfluenceDescription",
+      "type": "options",
+      "options": [
+        "Comments can be added here.",
+        "Pastures and crop lands",
+        "Properties such as this in this market area are typically located on busy roadways.",
+        "Typical residential subdivision"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 4,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "SiteInfluenceProximityType": {
+      "field_name": "SiteInfluenceProximityType",
+      "type": "options",
+      "options": [
+        "Bordering",
+        "Onsite"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteInfluenceType": {
+      "field_name": "SiteInfluenceType",
+      "type": "options",
+      "options": [
+        "Agricultural",
+        "BusyRoadway",
+        "GolfCourse",
+        "Other",
+        "Park",
+        "Residential"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteInfluenceTypeOtherDescription": {
+      "field_name": "SiteInfluenceTypeOtherDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Gated Community"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "SiteUtilityDescription": {
+      "field_name": "SiteUtilityDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Subject has solar power but has also maintained connection to public electrical lines."
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SiteUtilityOwnershipType": {
+      "field_name": "SiteUtilityOwnershipType",
+      "type": "options",
+      "options": [
+        "NonPublic",
+        "Public"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteValuationMethodType": {
+      "field_name": "SiteValuationMethodType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SalesComparison",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SiteValueIndicator": {
+      "field_name": "SiteValueIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteZoningClassificationDescription": {
+      "field_name": "SiteZoningClassificationDescription",
+      "type": "options",
+      "options": [
+        "3 Residential Building Lots per Acre",
+        "Residential - 10 Dwelling Units per Acre",
+        "Residential - Condominium",
+        "Residential - Multi Family district",
+        "Residential-Agricultural 10+ Acres"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteZoningClassificationIdentifier": {
+      "field_name": "SiteZoningClassificationIdentifier",
+      "type": "options",
+      "options": [
+        "MF-3",
+        "R-3",
+        "R10",
+        "RA-10",
+        "RC-1"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "SiteZoningComplianceType": {
+      "field_name": "SiteZoningComplianceType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Legal",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "StateCode": {
+      "field_name": "StateCode",
+      "type": "options",
+      "options": [
+        "IL",
+        "MD",
+        "TX",
+        "VA"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "StreetAccessType": {
+      "field_name": "StreetAccessType",
+      "type": "options",
+      "options": [
+        "CulDeSac",
+        "Local",
+        "Rural"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "StructureAreaMeasure": {
+      "field_name": "StructureAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "464"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "StructureAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureExcludingVehicleStorageAndADUFinishedAreaMeasure": {
+      "field_name": "StructureExcludingVehicleStorageAndADUFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "192",
+        "400"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureExcludingVehicleStorageAndADUFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "StructureExcludingVehicleStorageAndADUFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureExcludingVehicleStorageAndADUUnfinishedAreaMeasure": {
+      "field_name": "StructureExcludingVehicleStorageAndADUUnfinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "864"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureExcludingVehicleStorageAndADUUnfinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "StructureExcludingVehicleStorageAndADUUnfinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "StructureIdentifier": {
+      "field_name": "StructureIdentifier",
+      "type": "constant",
+      "options": [],
+      "default_value": "Building 1",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "StructureNonContinuousFinishedAreaMeasure": {
+      "field_name": "StructureNonContinuousFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "360"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "StructureNonContinuousFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "StructureNonContinuousFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "StructureValuationCommentText": {
+      "field_name": "StructureValuationCommentText",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Condition Status is reflective of noted repair having been completed.",
+        "Each unit has its own centralized, thermostatically controlled HVAC.",
+        "The exterior was recently painted, and new windows, doors, and shutters were installed. The roof was replaced within the past 5 years.",
+        "The subject is a new construction home with no damages, defects or deficiencies and is built using green materials.",
+        "The subject's outbuilding is a standalone ADU. Please see the Unit Interior - Standalone ADU for details and comments."
+      ],
+      "sample_count": 4,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "SwimmingPoolFeatureType": {
+      "field_name": "SwimmingPoolFeatureType",
+      "type": "options",
+      "options": [
+        "Heated",
+        "Other"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "SwimmingPoolFeatureTypeOtherDescription": {
+      "field_name": "SwimmingPoolFeatureTypeOtherDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Diving Board"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "TopographyType": {
+      "field_name": "TopographyType",
+      "type": "options",
+      "options": [
+        "Flat",
+        "Rolling"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "SF1"
+      ]
+    },
+    "TotalFinishedAreaOfAllLivingUnitsIncludingADUAreaMeasure": {
+      "field_name": "TotalFinishedAreaOfAllLivingUnitsIncludingADUAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "4900",
+        "5282",
+        "5500",
+        "5700"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "TotalFinishedAreaOfAllLivingUnitsIncludingADUAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "TotalFinishedAreaOfAllLivingUnitsIncludingADUAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "TotalMonthlyActualAdditionalIncomeAmount": {
+      "field_name": "TotalMonthlyActualAdditionalIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalMonthlyActualIncomeAmount": {
+      "field_name": "TotalMonthlyActualIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "10150"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalMonthlyActualRentAmount": {
+      "field_name": "TotalMonthlyActualRentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "10000",
+        "10150",
+        "10400",
+        "10800"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalMonthlyEstimatedAdditionalIncomeAmount": {
+      "field_name": "TotalMonthlyEstimatedAdditionalIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalMonthlyEstimatedIncomeAmount": {
+      "field_name": "TotalMonthlyEstimatedIncomeAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "10400",
+        "3500"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalMonthlyMarketRentAmount": {
+      "field_name": "TotalMonthlyMarketRentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "10400",
+        "3500"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "TotalRoomCount": {
+      "field_name": "TotalRoomCount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "TotalSalesConcessionAmount": {
+      "field_name": "TotalSalesConcessionAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "10400",
+        "11000",
+        "1500",
+        "1900",
+        "2500"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 8,
+      "samples_with_data": [
+        "SF1",
+        "SF5"
+      ]
+    },
+    "UnitAboveGradeUnfinishedAreaMeasure": {
+      "field_name": "UnitAboveGradeUnfinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitAboveGradeUnfinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitAboveGradeUnfinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitBelowGradeFinishComparisonType": {
+      "field_name": "UnitBelowGradeFinishComparisonType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Similar",
+      "examples": [],
+      "sample_count": 3,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "Condo2",
+        "SF1",
+        "SF3"
+      ]
+    },
+    "UnitBelowGradeUnfinishedAreaMeasure": {
+      "field_name": "UnitBelowGradeUnfinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "148",
+        "150",
+        "1624",
+        "230"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitBelowGradeUnfinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitBelowGradeUnfinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitIdentifier": {
+      "field_name": "UnitIdentifier",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Comp1 ADU",
+        "Comp1 Primary",
+        "Comp2 ADU",
+        "Comp2 Primary",
+        "Comp3 ADU"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 16,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF3"
+      ]
+    },
+    "UnitInteriorDefectsExistIndicator": {
+      "field_name": "UnitInteriorDefectsExistIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitMonthlyActualRentAmount": {
+      "field_name": "UnitMonthlyActualRentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "2500",
+        "2550",
+        "2600",
+        "2700"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "UnitMonthlyMarketRentAmount": {
+      "field_name": "UnitMonthlyMarketRentAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "2600",
+        "3500"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "UnitNonStandardAboveGradeFinishedAreaMeasure": {
+      "field_name": "UnitNonStandardAboveGradeFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitNonStandardAboveGradeFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitNonStandardAboveGradeFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitNonStandardBelowGradeFinishedAreaMeasure": {
+      "field_name": "UnitNonStandardBelowGradeFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitNonStandardBelowGradeFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitNonStandardBelowGradeFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitOccupancyType": {
+      "field_name": "UnitOccupancyType",
+      "type": "options",
+      "options": [
+        "OwnerOccupied",
+        "Tenant",
+        "Vacant"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitRentedIndicator": {
+      "field_name": "UnitRentedIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "UnitStandardAboveGradeFinishedAreaMeasure": {
+      "field_name": "UnitStandardAboveGradeFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1150",
+        "1190",
+        "1200",
+        "1240"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 25,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitStandardAboveGradeFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitStandardAboveGradeFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitStandardBelowGradeFinishedAreaMeasure": {
+      "field_name": "UnitStandardBelowGradeFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "0",
+        "1000",
+        "1200",
+        "1232",
+        "1250"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 11,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitStandardBelowGradeFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitStandardBelowGradeFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UnitTotalFinishedAreaMeasure": {
+      "field_name": "UnitTotalFinishedAreaMeasure",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "1050",
+        "1190",
+        "1200",
+        "1250",
+        "2695"
+      ],
+      "sample_count": 2,
+      "unique_value_count": 9,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "UnitTotalFinishedAreaMeasure@AreaUnitOfMeasureType": {
+      "field_name": "UnitTotalFinishedAreaMeasure@AreaUnitOfMeasureType",
+      "type": "constant",
+      "options": [],
+      "default_value": "SquareFeet",
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2"
+      ]
+    },
+    "UnitValuationCommentText": {
+      "field_name": "UnitValuationCommentText",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "The ADU was built out within the past 5-10 years with standard builder grade materials that are typical for accessory units in this market. The unit has been well maintained with no apparent defects, damages, or deficiencies.",
+        "The Level B1 bath was gut renovated approximately 2 - 3 years ago with upgrades to the shower, addition of a large soaking tub, upgraded ceramic tile in the shower and floors, custom built vanity with marble countertop and upgraded fixtures and lighting. The kitchen cabinets were re-faced, and new solid surface countertops installed along with new appliances and lighting fixtures. The carpet was replaced throughout approximately 5 - 6 years ago with upgraded carpet on the first floor (including primary bedroom) and basement family room. The 2nd floor carpeting was also replaced, however with standard grade carpet. The vinyl floors in the 2nd floor baths were replaced with standard grade vinyl 6 years ago.",
+        "The below grade area has a custom finished wet bar including wood cabinets and countertops. Media room has custom cabinetry for speakers and media devices.",
+        "The dwelling has been well-maintained and exhibits only minimal wear and tear."
+      ],
+      "sample_count": 3,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "UtilitiesMeteredSeparatelyIndicator": {
+      "field_name": "UtilitiesMeteredSeparatelyIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 2,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "SF3"
+      ]
+    },
+    "UtilityType": {
+      "field_name": "UtilityType",
+      "type": "options",
+      "options": [
+        "Electricity",
+        "Gas",
+        "SanitarySewer",
+        "Water"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 4,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationAnalysisCategoryType": {
+      "field_name": "ValuationAnalysisCategoryType",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Assignment",
+        "ComparableRental",
+        "ComparablesPriorSalesAndTransferHistory",
+        "DisasterMitigation",
+        "EnergyEfficientAndGreenFeatures"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 19,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationApproachExclusionReasonType": {
+      "field_name": "ValuationApproachExclusionReasonType",
+      "type": "constant",
+      "options": [],
+      "default_value": "NotNecessaryForCredibleResults",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationAssignmentType": {
+      "field_name": "ValuationAssignmentType",
+      "type": "options",
+      "options": [
+        "Purchase",
+        "Refinance"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationCommentText": {
+      "field_name": "ValuationCommentText",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "$5,000 concession towards repair of the carpet. Window treatments, washer and dryer, and media room projector conveyed per sales contract.",
+        "3 units owned by developer are for sale.",
+        "A review of a fully executed sales contract was completed by this appraiser. There was no indication of atypical terms or agreements. No noted concessions, gifts, or other types of assistance were indicated in the purchase contract.",
+        "As represented in the area breakdown section, there is 1552 sq ft in the below grade area (walkout basement), of which 320 sq ft is a utility room that is not considered finished area even though the sketch might suggest that. The area breakdown section is correct and accurate. The sketch also represents 360 sq ft of a family room/bonus room above the garage that is noncontinuous with the rest of the home but has its own entrance and is finished and usable.",
+        "Built in 2014 and has consistently had one owner in that time frame."
+      ],
+      "sample_count": 5,
+      "unique_value_count": 43,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationReconciliationSummaryCommentDescription": {
+      "field_name": "ValuationReconciliationSummaryCommentDescription",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Utilize this subsection for additional commentary as required by USPAP."
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationReportContentIdentifier": {
+      "field_name": "ValuationReportContentIdentifier",
+      "type": "constant",
+      "options": [],
+      "default_value": "URAR Delivery Specification v1.4",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationReportInspectionCertificationType": {
+      "field_name": "ValuationReportInspectionCertificationType",
+      "type": "options",
+      "options": [
+        "InteriorAndExterior",
+        "NoPhysicalInspection"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationSoftwareProductIdentifier": {
+      "field_name": "ValuationSoftwareProductIdentifier",
+      "type": "options",
+      "options": [
+        "MYAPP",
+        "MYAPP1"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationSoftwareProductName": {
+      "field_name": "ValuationSoftwareProductName",
+      "type": "options",
+      "options": [
+        "Some Appraisal Creator",
+        "Some Appraisal Creator1"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationSoftwareProductVersionIdentifier": {
+      "field_name": "ValuationSoftwareProductVersionIdentifier",
+      "type": "options",
+      "options": [
+        "11.2.1",
+        "11.2.2"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValuationSoftwareVendorName": {
+      "field_name": "ValuationSoftwareVendorName",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "Nowhere Technologies"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValueIndicatedByIncomeApproachAmount": {
+      "field_name": "ValueIndicatedByIncomeApproachAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "780000"
+      ],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit"
+      ]
+    },
+    "ValueIndicatedBySalesComparisonAmount": {
+      "field_name": "ValueIndicatedBySalesComparisonAmount",
+      "type": "free_text",
+      "options": [],
+      "default_value": null,
+      "examples": [
+        "350000",
+        "491000",
+        "775000",
+        "785000",
+        "900000"
+      ],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ValueMarketabilityImpactType": {
+      "field_name": "ValueMarketabilityImpactType",
+      "type": "options",
+      "options": [
+        "Adverse",
+        "Beneficial",
+        "Neutral"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 3,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ViewPrimaryIndicator": {
+      "field_name": "ViewPrimaryIndicator",
+      "type": "options",
+      "options": [
+        "false",
+        "true"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ViewRangeType": {
+      "field_name": "ViewRangeType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Full",
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ViewType": {
+      "field_name": "ViewType",
+      "type": "options",
+      "options": [
+        "GolfCourse",
+        "HighDensityResidential",
+        "Other",
+        "Pastoral",
+        "Pond",
+        "Residential"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 6,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "ViewTypeOtherDescription": {
+      "field_name": "ViewTypeOtherDescription",
+      "type": "constant",
+      "options": [],
+      "default_value": "Agricultural",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    },
+    "ViewsComparisonType": {
+      "field_name": "ViewsComparisonType",
+      "type": "options",
+      "options": [
+        "Inferior",
+        "Similar"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 2,
+      "samples_with_data": [
+        "Condo2"
+      ]
+    },
+    "WallMaterialType": {
+      "field_name": "WallMaterialType",
+      "type": "options",
+      "options": [
+        "Aluminum",
+        "Brick",
+        "CementBoard",
+        "Vinyl",
+        "Wood"
+      ],
+      "default_value": null,
+      "examples": [],
+      "sample_count": 5,
+      "unique_value_count": 5,
+      "samples_with_data": [
+        "2-to-4-unit",
+        "Condo2",
+        "SF1",
+        "SF3",
+        "SF5"
+      ]
+    },
+    "WaterSourceType": {
+      "field_name": "WaterSourceType",
+      "type": "constant",
+      "options": [],
+      "default_value": "Well",
+      "examples": [],
+      "sample_count": 1,
+      "unique_value_count": 1,
+      "samples_with_data": [
+        "SF3"
+      ]
+    }
+  }
+}

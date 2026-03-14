@@ -52,6 +52,7 @@ export interface Inspection {
   current_phase: PhaseCode;
   current_field_index: number;
   status: InspectionStatus;
+  form_data?: any; // Raw JSON data in label-value format
   created_at?: string;
   updated_at?: string;
 }

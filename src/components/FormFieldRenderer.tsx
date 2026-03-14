@@ -6,7 +6,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { HelpCircle, Info } from 'lucide-react';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { ChevronDown, HelpCircle, Info, X } from 'lucide-react';
 
 interface FormFieldProps {
   field: UADField;
@@ -17,6 +20,7 @@ interface FormFieldProps {
   onToggleArrayValue: (value: string) => void;
   userId: string;
   inspectionName: string;
+  isLast?: boolean;
 }
 
 export function FormFieldRenderer({
@@ -28,6 +32,7 @@ export function FormFieldRenderer({
   onToggleArrayValue,
   userId,
   inspectionName,
+  isLast = false,
 }: FormFieldProps) {
   const renderInput = () => {
     if (field.input_type === 'Text') {
@@ -36,7 +41,6 @@ export function FormFieldRenderer({
           type="text"
           value={value || ''}
           onChange={(e) => onValueChange(e.target.value)}
-          disabled={!included}
           placeholder="Enter text..."
         />
       );
@@ -47,7 +51,6 @@ export function FormFieldRenderer({
         <Textarea
           value={value || ''}
           onChange={(e) => onValueChange(e.target.value)}
-          disabled={!included}
           rows={4}
           placeholder="Enter detailed text..."
         />
@@ -60,13 +63,33 @@ export function FormFieldRenderer({
           type="number"
           value={value || ''}
           onChange={(e) => onValueChange(Number(e.target.value))}
-          disabled={!included}
           placeholder="Enter number..."
         />
       );
     }
 
-    if (field.input_type === 'Enum' || field.input_type === 'Rating') {
+    if (field.input_type === 'Enum') {
+      const options = parseEnumOptions(field.possible_answers);
+      return (
+        <Select
+          value={value || ''}
+          onValueChange={onValueChange}
+        >
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="Select an option..." />
+          </SelectTrigger>
+          <SelectContent>
+            {options.map((option) => (
+              <SelectItem key={option} value={option}>
+                {option}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      );
+    }
+
+    if (field.input_type === 'Rating') {
       const options = parseEnumOptions(field.possible_answers);
       return (
         <div className="flex flex-wrap gap-2">
@@ -76,7 +99,6 @@ export function FormFieldRenderer({
               variant={value === option ? 'default' : 'outline'}
               size="sm"
               onClick={() => onValueChange(option)}
-              disabled={!included}
               className="rounded-full"
             >
               {option}
@@ -91,20 +113,58 @@ export function FormFieldRenderer({
       const selectedValues = Array.isArray(value) ? value : [];
 
       return (
-        <div className="flex flex-wrap gap-2">
-          {options.map((option) => (
+        <Popover>
+          <PopoverTrigger asChild>
             <Button
-              key={option}
-              variant={selectedValues.includes(option) ? 'default' : 'outline'}
-              size="sm"
-              onClick={() => onToggleArrayValue(option)}
-              disabled={!included}
-              className="rounded-full"
+              variant="outline"
+              role="combobox"
+              className="w-full justify-between text-left font-normal min-h-10 h-auto"
             >
-              {option}
+              <div className="flex flex-wrap gap-1 flex-1">
+                {selectedValues.length === 0 ? (
+                  <span className="text-muted-foreground">Select options...</span>
+                ) : (
+                  selectedValues.map((val) => (
+                    <Badge
+                      key={val}
+                      variant="secondary"
+                      className="gap-1 bg-[#00A5E6] text-white hover:bg-[#0094CE]"
+                    >
+                      {val}
+                      <X
+                        className="h-3 w-3 cursor-pointer"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onToggleArrayValue(val);
+                        }}
+                      />
+                    </Badge>
+                  ))
+                )}
+              </div>
+              <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
             </Button>
-          ))}
-        </div>
+          </PopoverTrigger>
+          <PopoverContent className="w-full p-0" align="start">
+            <div className="max-h-64 overflow-auto p-2">
+              {options.map((option) => (
+                <div
+                  key={option}
+                  className="flex items-center space-x-2 rounded-sm px-2 py-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={() => onToggleArrayValue(option)}
+                >
+                  <Checkbox
+                    checked={selectedValues.includes(option)}
+                    onCheckedChange={() => onToggleArrayValue(option)}
+                  />
+                  <label className="flex-1 cursor-pointer text-sm">
+                    {option}
+                  </label>
+                </div>
+              ))}
+            </div>
+          </PopoverContent>
+        </Popover>
       );
     }
 
@@ -113,7 +173,6 @@ export function FormFieldRenderer({
         <PhotoCapture
           value={value}
           onChange={onValueChange}
-          disabled={!included}
           userId={userId}
           inspectionName={inspectionName}
           fieldColumn={field.appsheet_column}
@@ -125,73 +184,31 @@ export function FormFieldRenderer({
   };
 
   return (
-    <Card className="animate-fade-in">
-      <CardHeader className="pb-4">
-        <div className="flex flex-wrap items-center gap-2 mb-3">
-          <Badge variant="default">{field.phase}</Badge>
-          {field.uad_section && (
-            <Badge variant="secondary">{field.uad_section}</Badge>
-          )}
-          {field.report_field_id && (
-            <Badge variant="outline">{field.report_field_id}</Badge>
-          )}
-          {field.required === 'Yes' && (
-            <Badge variant="destructive" className="text-xs">Required</Badge>
+    <div className={`grid grid-cols-[35%_65%] min-h-[50px] ${!isLast ? 'border-b border-gray-200' : ''}`}>
+      {/* Label Column */}
+      <div className="bg-blue-50 px-4 py-3 flex items-center border-r border-gray-200">
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-medium text-gray-900">
+            {field.report_label}
+          </span>
+          {field.required === 'Yes' && <span className="text-red-500 text-sm">*</span>}
+          {field.help_text && (
+            <div className="group relative">
+              <HelpCircle className="h-4 w-4 text-gray-400 cursor-help" />
+              <div className="hidden group-hover:block absolute left-0 top-6 z-10 w-64 p-3 bg-white border border-gray-200 rounded shadow-lg text-xs text-gray-700">
+                {field.help_text}
+              </div>
+            </div>
           )}
         </div>
-        <h2 className="text-xl font-semibold leading-tight">{field.report_label}</h2>
-      </CardHeader>
+      </div>
 
-      <CardContent className="space-y-5">
-        {/* Inclusion toggle */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Include this field?</label>
-          <div className="flex gap-2">
-            <Button
-              variant={included ? 'default' : 'outline'}
-              size="sm"
-              onClick={() => onInclusionChange(true)}
-            >
-              Yes
-            </Button>
-            <Button
-              variant={!included ? 'destructive' : 'outline'}
-              size="sm"
-              onClick={() => onInclusionChange(false)}
-            >
-              No
-            </Button>
-          </div>
-        </div>
-
-        {/* Field input */}
-        <div className="space-y-2">
+      {/* Input Column */}
+      <div className="bg-white px-4 py-3 flex items-center">
+        <div className="w-full">
           {renderInput()}
         </div>
-
-        {/* Help text */}
-        {field.help_text && (
-          <div className="flex gap-2 p-3 rounded-lg bg-muted text-sm">
-            <HelpCircle className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">{field.help_text}</span>
-          </div>
-        )}
-
-        {/* Guidance */}
-        {field.definition_guidance && (
-          <div className="flex gap-2 p-3 rounded-lg bg-muted text-sm">
-            <Info className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" />
-            <span className="text-muted-foreground">{field.definition_guidance}</span>
-          </div>
-        )}
-
-        {/* Show If (debug) */}
-        {field.show_if && (
-          <div className="p-3 rounded-lg bg-muted text-xs font-mono text-muted-foreground">
-            <span className="font-sans font-medium">Show If:</span> {field.show_if}
-          </div>
-        )}
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }
