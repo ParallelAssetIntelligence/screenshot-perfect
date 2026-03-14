@@ -173,6 +173,7 @@ export function FormFieldRenderer({
         <PhotoCapture
           value={value}
           onChange={onValueChange}
+          disabled={false}
           userId={userId}
           inspectionName={inspectionName}
           fieldColumn={field.appsheet_column}
