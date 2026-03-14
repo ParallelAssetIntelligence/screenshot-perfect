@@ -128,7 +128,7 @@ export function FormFieldRenderer({
                     <Badge
                       key={val}
                       variant="secondary"
-                      className="gap-1 bg-[#00A5E6] text-white hover:bg-[#0094CE]"
+                      className="gap-1 bg-primary text-primary-foreground hover:bg-primary/90"
                     >
                       {val}
                       <X
